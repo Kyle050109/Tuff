@@ -1,0 +1,318 @@
+{
+  "records_raw": 262,
+  "valid": 260,
+  "u2028_in_file": 0,
+  "n_A1": 184,
+  "prompts_A1": 68,
+  "hit_A1": 120,
+  "n_A2": 33,
+  "prompts_A2": 12,
+  "hit_A2": 10,
+  "n_B": 8,
+  "prompts_B": 4,
+  "hit_B": 8,
+  "n_C": 35,
+  "prompts_C": 16,
+  "hit_C": 35,
+  "p_A1": 65.21739130434783,
+  "p_A1_ci": [
+    58.08788040989058,
+    71.72447212543706
+  ],
+  "p_A1_prompt": 77.94117647058823,
+  "p_A1_prompt_ci": [
+    66.74303647622985,
+    86.15110842032036
+  ],
+  "p_A2_upper": null,
+  "trig_A1": [
+    184,
+    120,
+    0
+  ],
+  "nontrig_upper_A1": null,
+  "trig_A1+A2": [
+    217,
+    130,
+    0
+  ],
+  "nontrig_upper_A1+A2": null,
+  "A1_stage1": [
+    91,
+    136
+  ],
+  "A1_stage2": [
+    29,
+    48
+  ],
+  "geo_含地域词": [
+    120,
+    184,
+    184,
+    184
+  ],
+  "intent_trig_A1+A2": {
+    "榜单型": [
+      62,
+      62
+    ],
+    "人群场景": [
+      30,
+      30
+    ],
+    "需求功效": [
+      27,
+      27
+    ],
+    "品类决策": [
+      28,
+      28
+    ],
+    "信息型": [
+      19,
+      19
+    ],
+    "对比型": [
+      18,
+      18
+    ],
+    "竞品对比": [
+      33,
+      33
+    ]
+  },
+  "intent_trig_全样本": {
+    "榜单型": [
+      62,
+      62
+    ],
+    "人群场景": [
+      30,
+      30
+    ],
+    "需求功效": [
+      27,
+      27
+    ],
+    "品类决策": [
+      28,
+      28
+    ],
+    "信息型": [
+      19,
+      19
+    ],
+    "对比型": [
+      26,
+      26
+    ],
+    "竞品对比": [
+      33,
+      33
+    ],
+    "声誉型": [
+      16,
+      16
+    ],
+    "交易型": [
+      19,
+      19
+    ]
+  },
+  "intent_prompt_counts": {
+    "榜单型": 22,
+    "对比型": 10,
+    "品类决策": 8,
+    "信息型": 8,
+    "需求功效": 12,
+    "人群场景": 12,
+    "声誉型": 8,
+    "交易型": 8,
+    "竞品对比": 12
+  },
+  "citations": 2878,
+  "byte_share": 67.75538568450312,
+  "iesdouyin_share": 66.9909659485754,
+  "iesdouyin_of_byte": 98.87179487179488,
+  "unique_hosts": 179,
+  "samples_with_douyin": 217,
+  "byte_all_pool": [
+    2198,
+    3529
+  ],
+  "dom_iesdouyin.com": [
+    1928,
+    2163
+  ],
+  "ya_man_family": [
+    0,
+    0
+  ],
+  "competitor_citations": {
+    "汤悦": {
+      "title": 181,
+      "url": 14,
+      "title_or_url": 181
+    },
+    "汤崎": {
+      "title": 178,
+      "url": 38,
+      "title_or_url": 178
+    },
+    "阿奇拉": {
+      "title": 255,
+      "url": 0,
+      "title_or_url": 255
+    },
+    "熹汤": {
+      "title": 154,
+      "url": 0,
+      "title_or_url": 154
+    },
+    "大江户": {
+      "title": 53,
+      "url": 0,
+      "title_or_url": 53
+    },
+    "极乐汤": {
+      "title": 19,
+      "url": 0,
+      "title_or_url": 19
+    },
+    "泉之源": {
+      "title": 38,
+      "url": 0,
+      "title_or_url": 38
+    }
+  },
+  "own_brand_in_citations": 156,
+  "five_run_prompts": 19,
+  "rho": 0.09891598915989157,
+  "rho_ci": [
+    -0.040476190476190374,
+    0.21065493646138803
+  ],
+  "de": 1.3956639566395663,
+  "de_ci": [
+    0.8380952380952384,
+    1.842619745845552
+  ],
+  "rho_estimable": true,
+  "rho_swing_only": 0.059233449477351874,
+  "five_run_total": 19,
+  "deterministic": 1,
+  "mde_single": {
+    "3pp": 1979,
+    "3pp_prompts_de1.40": 553,
+    "5pp": 713,
+    "5pp_prompts_de1.40": 200,
+    "8pp": 279,
+    "8pp_prompts_de1.40": 78,
+    "10pp": 179,
+    "10pp_prompts_de1.40": 50,
+    "15pp": 80,
+    "15pp_prompts_de1.40": 23
+  },
+  "mde_two": {
+    "5pp": 1372,
+    "8pp": 522,
+    "10pp": 328
+  },
+  "hyper_A1_only": 1.0,
+  "hyper_A1A2_merged": 1.0,
+  "hyper_A1_榜单型": 1.0,
+  "hyper_A1_非榜单型": 1.0,
+  "r_A1+A2": [
+    0.9425931328873498,
+    [
+      0.6531699725297204,
+      0.9917093082941228
+    ]
+  ],
+  "r_A1": [
+    0.9462466738579985,
+    [
+      0.6721344171230061,
+      0.9922494239024754
+    ]
+  ],
+  "a2_face_hits": {
+    "汤悦": 5,
+    "HEATJOY": 0,
+    "汤崎": 3,
+    "TENZ": 0,
+    "阿奇拉": 2,
+    "熹汤": 1,
+    "大江户": 2,
+    "极乐汤": 1,
+    "泉之源": 1
+  },
+  "with_numbering": 260,
+  "numbering_gaps": 0,
+  "brand_rank": {
+    "汤悦": {
+      "mentions": 94,
+      "cite_samples": 79,
+      "ranked_times": 16,
+      "rank_median": 3,
+      "rank_best": 1,
+      "borda": 11
+    },
+    "汤崎": {
+      "mentions": 114,
+      "cite_samples": 92,
+      "ranked_times": 22,
+      "rank_median": 2,
+      "rank_best": 1,
+      "borda": 6
+    },
+    "阿奇拉": {
+      "mentions": 90,
+      "cite_samples": 100,
+      "ranked_times": 19,
+      "rank_median": 2,
+      "rank_best": 1,
+      "borda": 8
+    },
+    "熹汤": {
+      "mentions": 53,
+      "cite_samples": 79,
+      "ranked_times": 9,
+      "rank_median": 4,
+      "rank_best": 2,
+      "borda": 15
+    },
+    "大江户": {
+      "mentions": 7,
+      "cite_samples": 7,
+      "ranked_times": 0,
+      "rank_median": null,
+      "rank_best": null,
+      "borda": 18
+    },
+    "极乐汤": {
+      "mentions": 7,
+      "cite_samples": 7,
+      "ranked_times": 0,
+      "rank_median": null,
+      "rank_best": null,
+      "borda": 21
+    },
+    "泉之源": {
+      "mentions": 5,
+      "cite_samples": 5,
+      "ranked_times": 0,
+      "rank_median": null,
+      "rank_best": null,
+      "borda": 24
+    },
+    "_本品牌": {
+      "mentions": 130,
+      "cite_samples": 88,
+      "ranked_times": 28,
+      "rank_median": 1,
+      "rank_best": 1,
+      "borda": 5
+    }
+  }
+}

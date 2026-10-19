@@ -1,0 +1,230 @@
+[multi] 品牌表：own=['松胜', 'songsheng']｜竞品 21 项
+[11:12:56] 待跑 208 条（已跳过 0 条）；账号 3 个 × 每号 3 标签页
+[11:13:03] [acc1] 页面池就绪 3 个标签页
+[11:13:09] [acc2] 页面池就绪 3 个标签页
+[11:13:16] [acc3] 页面池就绪 3 个标签页
+[11:13:53] [1/208]acc3/w2 B05#1 ok=True ans=1196 cites=15/24 search=True brand=True 22.5s rate=97/h ETA128min
+[11:13:59] [2/208]acc1/w2 B02#1 ok=True ans=1623 cites=14/23 search=True brand=False 31.5s rate=167/h ETA74min
+[11:14:00] [3/208]acc2/w2 B03#2 ok=True ans=1448 cites=15/26 search=True brand=False 33.0s rate=247/h ETA50min
+[11:14:02] [4/208]acc1/w0 B01#1 ok=True ans=1899 cites=16/23 search=True brand=False 31.5s rate=314/h ETA39min
+[11:14:12] [5/208]acc2/w0 B02#2 ok=True ans=1580 cites=16/23 search=True brand=False 16.5s rate=323/h ETA38min
+[11:14:14] [6/208]acc2/w1 B03#1 ok=True ans=1520 cites=14/23 search=True brand=False 18.0s rate=374/h ETA32min
+[11:14:18] [7/208]acc1/w1 B01#2 ok=True ans=1746 cites=15/21 search=True brand=True 18.0s rate=404/h ETA30min
+[11:14:22] [8/208]acc3/w0 B04#1 ok=True ans=1295 cites=17/24 search=True brand=False 24.0s rate=438/h ETA27min
+[11:14:26] [9/208]acc3/w2 B05#2 ok=True ans=1115 cites=15/20 search=True brand=True 21.0s rate=462/h ETA26min
+[11:14:29] [10/208]acc3/w1 B04#2 ok=True ans=1375 cites=17/24 search=True brand=False 25.5s rate=494/h ETA24min
+[11:14:35] [11/208]acc1/w0 B07#1 ok=True ans=1072 cites=16/22 search=True brand=False 21.0s rate=500/h ETA24min
+[11:14:43] [12/208]acc2/w2 B06#2 ok=True ans=1606 cites=15/25 search=True brand=True 31.5s rate=497/h ETA24min
+[11:14:45] [13/208]acc1/w2 B06#1 ok=True ans=1329 cites=16/21 search=True brand=True 34.5s rate=524/h ETA22min
+[11:14:51] [14/208]acc2/w0 B07#2 ok=True ans=982 cites=14/22 search=True brand=False 21.0s rate=527/h ETA22min
+[11:14:59] [15/208]acc3/w0 B09#1 ok=True ans=1018 cites=17/27 search=True brand=False 16.5s rate=521/h ETA22min
+[11:15:06] [16/208]acc3/w2 B09#2 ok=True ans=1061 cites=17/27 search=True brand=False 28.5s rate=522/h ETA22min
+[11:15:07] [17/208]acc2/w1 B08#1 ok=True ans=1988 cites=17/26 search=True brand=False 34.5s rate=550/h ETA21min
+[11:15:09] [18/208]acc3/w1 B10#1 ok=True ans=1145 cites=17/27 search=True brand=True 21.0s rate=571/h ETA20min
+[11:15:19] [19/208]acc1/w1 B08#2 ok=True ans=2018 cites=16/24 search=True brand=False 39.0s rate=554/h ETA20min
+[11:15:20] [20/208]acc1/w0 B10#2 ok=True ans=1569 cites=15/26 search=True brand=True 31.5s rate=581/h ETA19min
+[11:15:20] [21/208]acc2/w2 B11#1 ok=True ans=1274 cites=11/16 search=True brand=False 25.5s rate=608/h ETA18min
+[11:15:28] [22/208]acc1/w2 B11#2 ok=True ans=1474 cites=18/27 search=True brand=False 31.5s rate=600/h ETA19min
+[11:15:35] [23/208]acc2/w0 B12#1 ok=True ans=1339 cites=15/23 search=True brand=True 25.5s rate=594/h ETA19min
+[11:15:42] [24/208]acc3/w0 B12#2 ok=True ans=1286 cites=15/23 search=True brand=False 25.5s rate=593/h ETA19min
+[11:15:44] [25/208]acc3/w2 B13#1 ok=True ans=1048 cites=11/21 search=True brand=False 27.0s rate=609/h ETA18min
+[11:15:46] [26/208]acc2/w1 B13#2 ok=True ans=1139 cites=17/28 search=True brand=False 21.0s rate=622/h ETA18min
+[11:15:49] [27/208]acc3/w1 B14#1 ok=True ans=1212 cites=11/19 search=True brand=True 22.5s rate=635/h ETA17min
+[11:15:57] [28/208]acc1/w0 B15#1 ok=True ans=1154 cites=17/26 search=True brand=False 22.5s rate=625/h ETA17min
+[11:15:58] [29/208]acc2/w2 B15#2 ok=True ans=1132 cites=15/22 search=True brand=False 27.0s rate=643/h ETA17min
+[11:16:00] [30/208]acc1/w1 B14#2 ok=True ans=1192 cites=15/25 search=True brand=True 18.0s rate=658/h ETA16min
+[11:16:13] [31/208]acc1/w2 B16#1 ok=True ans=1650 cites=17/26 search=True brand=False 33.0s rate=630/h ETA17min
+[11:16:18] [32/208]acc2/w0 B16#2 ok=True ans=1522 cites=17/24 search=True brand=False 21.0s rate=633/h ETA17min
+[11:16:18] [33/208]acc3/w0 B17#1 ok=True ans=1215 cites=10/14 search=True brand=True 16.5s rate=650/h ETA16min
+[11:16:20] [34/208]acc3/w2 B17#2 ok=True ans=1220 cites=17/24 search=True brand=True 24.0s rate=666/h ETA16min
+[11:16:31] [35/208]acc2/w1 B18#1 ok=True ans=1347 cites=17/26 search=True brand=False 22.5s rate=646/h ETA16min
+[11:16:35] [36/208]acc3/w1 B18#2 ok=True ans=1405 cites=12/23 search=True brand=False 21.0s rate=651/h ETA16min
+[11:16:35] [37/208]acc1/w0 B19#1 ok=True ans=987 cites=11/17 search=True brand=True 24.0s rate=668/h ETA15min
+[11:16:40] [38/208]acc1/w1 B20#1 ok=True ans=878 cites=17/17 search=True brand=False 15.0s rate=669/h ETA15min
+[11:16:50] [39/208]acc1/w2 B20#2 ok=True ans=982 cites=14/14 search=True brand=False 25.5s rate=655/h ETA15min
+[11:16:58] [40/208]acc3/w0 B21#1 ok=True ans=1210 cites=17/24 search=True brand=False 22.5s rate=649/h ETA16min
+[11:17:00] [41/208]acc3/w2 B22#1 ok=True ans=1330 cites=12/21 search=True brand=True 28.5s rate=657/h ETA15min
+[11:17:01] [42/208]acc2/w0 B21#2 ok=True ans=1317 cites=18/24 search=True brand=False 25.5s rate=673/h ETA15min
+[11:17:10] [43/208]acc2/w1 B22#2 ok=True ans=1401 cites=10/19 search=True brand=True 27.0s rate=660/h ETA15min
+[11:17:14] [44/208]acc1/w0 B23#1 ok=True ans=1443 cites=16/26 search=True brand=False 27.0s rate=664/h ETA15min
+[11:17:16] [45/208]acc3/w1 B23#2 ok=True ans=1401 cites=15/23 search=True brand=False 22.5s rate=675/h ETA14min
+[11:17:21] [46/208]acc1/w1 B24#1 ok=True ans=1479 cites=16/28 search=True brand=False 22.5s rate=676/h ETA14min
+[11:17:33] [47/208]acc2/w0 P02#1 ok=True ans=918 cites=18/23 search=True brand=False 16.5s rate=658/h ETA15min
+[11:17:34] [48/208]acc1/w2 B24#2 ok=True ans=1668 cites=14/25 search=True brand=False 31.5s rate=669/h ETA14min
+[11:17:35] [49/208]acc3/w0 P01#1 ok=True ans=1093 cites=10/20 search=True brand=False 19.5s rate=681/h ETA14min
+[11:17:38] [50/208]acc3/w2 P01#2 ok=True ans=1339 cites=12/24 search=True brand=False 25.5s rate=686/h ETA14min
+[11:17:45] [51/208]acc2/w1 P02#2 ok=True ans=939 cites=18/23 search=True brand=False 21.0s rate=681/h ETA14min
+[11:17:51] [52/208]acc3/w1 P03#2 ok=True ans=1018 cites=18/29 search=True brand=False 19.5s rate=681/h ETA14min
+[11:17:56] [53/208]acc1/w0 P03#1 ok=True ans=1189 cites=17/28 search=True brand=False 28.5s rate=681/h ETA14min
+[11:18:00] [54/208]acc1/w1 P04#1 ok=True ans=1239 cites=18/26 search=True brand=False 22.5s rate=684/h ETA14min
+[11:18:05] [55/208]acc1/w2 P05#1 ok=True ans=819 cites=16/21 search=True brand=False 19.5s rate=684/h ETA13min
+[11:18:08]    [acc2/w2] B19#2 空答案，就地重试 1/2
+[11:18:10] [56/208]acc2/w0 P04#2 ok=True ans=1228 cites=15/24 search=True brand=False 24.0s rate=685/h ETA13min
+[11:18:11] [57/208]acc3/w0 P05#2 ok=True ans=888 cites=11/22 search=True brand=False 21.0s rate=695/h ETA13min
+[11:18:15] [58/208]acc3/w2 P06#1 ok=True ans=955 cites=12/18 search=True brand=False 25.5s rate=697/h ETA13min
+[11:18:24] [59/208]acc2/w1 P06#2 ok=True ans=973 cites=7/18 search=True brand=False 25.5s rate=690/h ETA13min
+[11:18:27] [60/208]acc3/w1 P07#1 ok=True ans=1236 cites=12/23 search=True brand=False 24.0s rate=695/h ETA13min
+[11:18:35] [61/208]acc1/w1 P08#1 ok=True ans=1026 cites=0/None search=False brand=False 19.5s rate=688/h ETA13min
+[11:18:37] [62/208]acc2/w2 B19#2 ok=True ans=947 cites=17/21 search=True brand=True 16.5s rate=696/h ETA13min
+[11:18:37] [63/208]acc1/w0 P07#2 ok=True ans=1350 cites=12/21 search=True brand=False 28.5s rate=705/h ETA12min
+[11:18:38] [64/208]acc1/w2 P08#2 ok=True ans=1002 cites=0/None search=False brand=False 22.5s rate=715/h ETA12min
+[11:18:45] ⚠️⚠️ [acc1/w1] 撞到验证码 —— 该账号暂停，请人工处理（最多等 30 分钟）
+[11:18:47] ⚠️⚠️ [acc1/w2] 撞到验证码 —— 该账号暂停，请人工处理（最多等 30 分钟）
+[11:18:47] ⚠️⚠️ [acc1/w0] 撞到验证码 —— 该账号暂停，请人工处理（最多等 30 分钟）
+[11:18:51] [65/208]acc2/w0 P09#1 ok=True ans=1476 cites=12/23 search=True brand=True 27.0s rate=698/h ETA12min
+[11:18:53] [66/208]acc3/w2 P10#1 ok=True ans=1289 cites=12/20 search=True brand=True 25.5s rate=705/h ETA12min
+[11:18:57] [67/208]acc3/w0 P09#2 ok=True ans=1487 cites=18/27 search=True brand=True 31.5s rate=707/h ETA12min
+[11:19:05] [68/208]acc2/w1 P10#2 ok=True ans=1249 cites=12/19 search=True brand=True 25.5s rate=702/h ETA12min
+[11:19:07] ✅ [acc1/w2] 验证码已清，自动续跑（等了 20s）
+[11:19:07] [69/208]acc3/w1 P11#1 ok=True ans=1140 cites=18/29 search=True brand=False 25.5s rate=708/h ETA12min
+[11:19:10] [70/208]acc2/w2 P12#1 ok=True ans=1020 cites=0/None search=False brand=False 24.0s rate=712/h ETA12min
+[11:19:16] ✅ [acc1/w1] 验证码已清，自动续跑（等了 32s）
+[11:19:27] [71/208]acc2/w1 N03#1 ok=True ans=670 cites=0/None search=False brand=False 7.5s rate=689/h ETA12min
+[11:19:27] ✅ [acc1/w0] 验证码已清，自动续跑（等了 40s）
+[11:19:27] [72/208]acc2/w0 N01#2 ok=True ans=1086 cites=12/23 search=True brand=False 21.0s rate=698/h ETA12min
+[11:19:31] [73/208]acc3/w1 N03#2 ok=True ans=736 cites=0/None search=False brand=False 10.5s rate=700/h ETA12min
+[11:19:37] [74/208]acc3/w0 N02#2 ok=True ans=1186 cites=16/23 search=True brand=False 25.5s rate=698/h ETA12min
+[11:19:38] [75/208]acc3/w2 N02#1 ok=True ans=1448 cites=16/25 search=True brand=False 33.0s rate=707/h ETA11min
+[11:19:44] [76/208]acc1/w2 N01#1 ok=True ans=1121 cites=17/28 search=True brand=False 16.5s rate=705/h ETA11min
+[11:19:50] [77/208]acc2/w2 N04#1 ok=True ans=1444 cites=17/29 search=True brand=False 28.5s rate=704/h ETA11min
+[11:19:55] [78/208]acc1/w1 P11#2 ok=True ans=1225 cites=16/27 search=True brand=False 19.5s rate=703/h ETA11min
+[11:20:00] [79/208]acc1/w0 P12#2 ok=True ans=1044 cites=0/None search=False brand=False 24.0s rate=703/h ETA11min
+[11:20:03] [80/208]acc2/w0 N05#1 ok=True ans=939 cites=12/18 search=True brand=False 18.0s rate=707/h ETA11min
+[11:20:07] [81/208]acc2/w1 N04#2 ok=True ans=1291 cites=18/28 search=True brand=False 22.5s rate=710/h ETA11min
+[11:20:07] [82/208]acc3/w1 N05#2 ok=True ans=930 cites=12/22 search=True brand=False 18.0s rate=719/h ETA11min
+[11:20:10] [83/208]acc3/w0 N06#1 ok=True ans=1108 cites=12/24 search=True brand=False 19.5s rate=721/h ETA10min
+[11:20:16] [84/208]acc3/w2 N06#2 ok=True ans=1228 cites=12/20 search=True brand=False 25.5s rate=719/h ETA10min
+[11:20:21] [85/208]acc1/w2 N07#1 ok=True ans=1332 cites=17/25 search=True brand=False 21.0s rate=720/h ETA10min
+[11:20:28] [86/208]acc2/w2 N07#2 ok=True ans=1367 cites=17/25 search=True brand=False 25.5s rate=717/h ETA10min
+[11:20:38] [87/208]acc3/w0 N10#2 ok=True ans=784 cites=0/None search=False brand=False 18.0s rate=708/h ETA10min
+[11:20:39] [88/208]acc1/w1 N08#1 ok=True ans=1260 cites=17/26 search=True brand=False 22.5s rate=714/h ETA10min
+[11:20:40] [89/208]acc2/w1 N10#1 ok=True ans=878 cites=0/None search=False brand=False 18.0s rate=722/h ETA10min
+[11:20:41] [90/208]acc2/w0 N09#1 ok=True ans=1066 cites=12/22 search=True brand=True 19.5s rate=728/h ETA10min
+[11:20:41] [91/208]acc1/w0 N08#2 ok=True ans=1236 cites=17/27 search=True brand=False 27.0s rate=736/h ETA10min
+[11:20:48] [92/208]acc3/w1 N09#2 ok=True ans=1019 cites=12/23 search=True brand=False 19.5s rate=732/h ETA10min
+[11:20:55] [93/208]acc3/w2 N11#1 ok=True ans=1136 cites=18/26 search=True brand=False 27.0s rate=729/h ETA9min
+[11:20:59] [94/208]acc1/w2 N11#2 ok=True ans=1137 cites=18/26 search=True brand=False 19.5s rate=730/h ETA9min
+[11:21:06] [95/208]acc2/w2 N12#1 ok=True ans=1304 cites=17/25 search=True brand=False 25.5s rate=728/h ETA9min
+[11:21:16] [96/208]acc2/w1 D01#1 ok=True ans=1002 cites=0/None search=False brand=False 19.5s rate=720/h ETA9min
+[11:21:17] [97/208]acc1/w1 D01#2 ok=True ans=995 cites=0/None search=False brand=False 18.0s rate=725/h ETA9min
+[11:21:19] [98/208]acc1/w0 D02#2 ok=True ans=1140 cites=0/None search=False brand=False 24.0s rate=731/h ETA9min
+[11:21:20] [99/208]acc3/w0 N12#2 ok=True ans=935 cites=16/26 search=True brand=False 30.0s rate=736/h ETA9min
+[11:21:21] [100/208]acc2/w0 D02#1 ok=True ans=1083 cites=0/None search=False brand=False 24.0s rate=742/h ETA9min
+[11:21:31] [101/208]acc3/w1 D03#1 ok=True ans=1494 cites=12/22 search=True brand=False 24.0s rate=734/h ETA9min
+[11:21:38] [102/208]acc3/w2 D03#2 ok=True ans=1536 cites=11/22 search=True brand=False 31.5s rate=731/h ETA9min
+[11:21:38] [103/208]acc1/w2 D04#1 ok=True ans=910 cites=12/15 search=True brand=False 19.5s rate=738/h ETA9min
+[11:21:46] [104/208]acc2/w2 D04#2 ok=True ans=1013 cites=10/14 search=True brand=False 27.0s rate=734/h ETA9min
+[11:21:53] [105/208]acc2/w1 D05#1 ok=True ans=816 cites=8/12 search=True brand=False 19.5s rate=731/h ETA8min
+[11:21:54] [106/208]acc1/w1 D05#2 ok=True ans=747 cites=10/13 search=True brand=False 12.0s rate=737/h ETA8min
+[11:21:55] ⚠️⚠️ [acc2/w2] 撞到验证码 —— 该账号暂停，请人工处理（最多等 30 分钟）
+[11:21:59] [107/208]acc2/w0 D07#1 ok=True ans=944 cites=10/21 search=True brand=False 21.0s rate=736/h ETA8min
+[11:22:00] [108/208]acc1/w0 D06#1 ok=True ans=1461 cites=0/None search=False brand=False 28.5s rate=741/h ETA8min
+[11:22:02] [109/208]acc3/w0 D06#2 ok=True ans=1238 cites=0/None search=False brand=False 30.0s rate=746/h ETA8min
+[11:22:05] ✅ [acc2/w2] 验证码已清，自动续跑（等了 10s）
+[11:22:07] [110/208]acc3/w1 D07#2 ok=True ans=1066 cites=0/None search=False brand=False 18.0s rate=746/h ETA8min
+[11:22:11] [111/208]acc3/w2 D08#1 ok=True ans=963 cites=0/None search=False brand=False 24.0s rate=746/h ETA8min
+[11:22:12] ⚠️⚠️ [acc3/w0] 撞到验证码 —— 该账号暂停，请人工处理（最多等 30 分钟）
+[11:22:16] [112/208]acc1/w2 D08#2 ok=True ans=1175 cites=0/None search=False brand=False 19.5s rate=747/h ETA8min
+[11:22:18] ⚠️⚠️ [acc3/w1] 撞到验证码 —— 该账号暂停，请人工处理（最多等 30 分钟）
+[11:22:19] ⚠️⚠️ [acc3/w2] 撞到验证码 —— 该账号暂停，请人工处理（最多等 30 分钟）
+[11:22:23] [113/208]acc1/w1 I01#2 ok=True ans=767 cites=0/None search=False brand=False 12.0s rate=743/h ETA8min
+[11:22:23] ✅ [acc3/w0] 验证码已清，自动续跑（等了 12s）
+[11:22:30] [114/208]acc2/w1 I02#1 ok=True ans=955 cites=13/17 search=True brand=False 18.0s rate=741/h ETA8min
+[11:22:32] [115/208]acc2/w2 I01#1 ok=True ans=713 cites=0/None search=False brand=False 16.5s rate=744/h ETA7min
+[11:22:34] [116/208]acc1/w0 I03#1 ok=True ans=889 cites=10/13 search=True brand=False 18.0s rate=748/h ETA7min
+[11:22:35] [117/208]acc2/w0 I02#2 ok=True ans=959 cites=17/22 search=True brand=False 22.5s rate=753/h ETA7min
+[11:22:40] ✅ [acc3/w1] 验证码已清，自动续跑（等了 23s）
+[11:22:41] ✅ [acc3/w2] 验证码已清，自动续跑（等了 22s）
+[11:22:43]    [acc2/w0] I07#2 空答案，就地重试 1/2
+[11:22:44] [118/208]acc1/w2 I05#1 ok=True ans=600 cites=16/22 search=True brand=False 10.5s rate=747/h ETA7min
+[11:22:54] [119/208]acc1/w1 I05#2 ok=True ans=670 cites=16/22 search=True brand=False 7.5s rate=742/h ETA7min
+[11:22:59] [120/208]acc3/w0 I03#2 ok=True ans=780 cites=9/11 search=True brand=False 9.0s rate=741/h ETA7min
+[11:23:01] [121/208]acc1/w0 I07#1 ok=True ans=766 cites=0/None search=False brand=False 15.0s rate=745/h ETA7min
+[11:23:06] [122/208]acc2/w0 I07#2 ok=True ans=533 cites=0/None search=False brand=False 10.5s rate=744/h ETA7min
+[11:23:06] [123/208]acc3/w2 I04#2 ok=True ans=516 cites=11/16 search=True brand=False 13.5s rate=750/h ETA7min
+[11:23:07] [124/208]acc3/w1 I04#1 ok=True ans=405 cites=17/22 search=True brand=False 9.0s rate=755/h ETA7min
+[11:23:10] [125/208]acc2/w2 I06#2 ok=True ans=1006 cites=12/24 search=True brand=False 25.5s rate=758/h ETA7min
+[11:23:10] [126/208]acc1/w2 I08#1 ok=True ans=704 cites=0/None search=False brand=False 13.5s rate=764/h ETA6min
+[11:23:12] [127/208]acc2/w1 I06#1 ok=True ans=970 cites=11/17 search=True brand=False 21.0s rate=767/h ETA6min
+[11:23:21] [128/208]acc1/w1 I08#2 ok=True ans=625 cites=0/None search=False brand=False 13.5s rate=761/h ETA6min
+[11:23:22] [129/208]acc3/w0 I09#1 ok=True ans=640 cites=0/None search=False brand=False 12.0s rate=766/h ETA6min
+[11:23:27] [130/208]acc1/w0 I09#2 ok=True ans=694 cites=0/None search=False brand=False 16.5s rate=766/h ETA6min
+[11:23:36] [131/208]acc3/w1 I10#2 ok=True ans=782 cites=0/None search=False brand=False 13.5s rate=761/h ETA6min
+[11:23:36] [132/208]acc2/w0 I10#1 ok=True ans=648 cites=8/14 search=True brand=False 15.0s rate=766/h ETA6min
+[11:23:41] [133/208]acc3/w2 C01#1 ok=True ans=917 cites=18/31 search=True brand=True 21.0s rate=765/h ETA6min
+[11:23:42] [134/208]acc2/w2 C02#1 ok=True ans=961 cites=10/25 search=True brand=False 19.5s rate=771/h ETA6min
+[11:23:48] [135/208]acc1/w2 C01#2 ok=True ans=1103 cites=18/24 search=True brand=True 22.5s rate=769/h ETA6min
+[11:23:49] [136/208]acc2/w1 C02#2 ok=True ans=971 cites=11/24 search=True brand=False 21.0s rate=773/h ETA6min
+[11:23:59] [137/208]acc3/w0 C03#2 ok=True ans=1020 cites=12/26 search=True brand=False 19.5s rate=766/h ETA6min
+[11:24:02] [138/208]acc1/w1 C03#1 ok=True ans=1115 cites=18/26 search=True brand=False 21.0s rate=769/h ETA5min
+[11:24:04] [139/208]acc1/w0 C04#1 ok=True ans=1229 cites=0/None search=False brand=False 25.5s rate=772/h ETA5min
+[11:24:11] [140/208]acc3/w1 C04#2 ok=True ans=1027 cites=0/None search=False brand=False 21.0s rate=769/h ETA5min
+[11:24:13] [141/208]acc1/w2 C07#1 ok=True ans=694 cites=0/None search=False brand=False 13.5s rate=772/h ETA5min
+[11:24:15] [142/208]acc2/w0 C05#1 ok=True ans=1079 cites=18/23 search=True brand=True 22.5s rate=776/h ETA5min
+[11:24:19] [143/208]acc2/w2 C05#2 ok=True ans=1167 cites=18/33 search=True brand=True 25.5s rate=776/h ETA5min
+[11:24:26] [144/208]acc3/w2 C06#1 ok=True ans=1245 cites=9/18 search=True brand=False 30.0s rate=774/h ETA5min
+[11:24:29] [145/208]acc3/w0 C07#2 ok=True ans=657 cites=8/24 search=True brand=False 15.0s rate=776/h ETA5min
+[11:24:37] [146/208]acc2/w1 C06#2 ok=True ans=1392 cites=12/16 search=True brand=False 33.0s rate=771/h ETA5min
+[11:24:41] [147/208]acc1/w0 C08#2 ok=True ans=1216 cites=17/29 search=True brand=True 22.5s rate=772/h ETA5min
+[11:24:43] [148/208]acc1/w1 C08#1 ok=True ans=1119 cites=17/33 search=True brand=True 21.0s rate=776/h ETA5min
+[11:24:48] [149/208]acc3/w1 C09#1 ok=True ans=1037 cites=0/None search=False brand=False 22.5s rate=775/h ETA5min
+[11:24:48] [150/208]acc1/w2 C09#2 ok=True ans=1150 cites=0/None search=False brand=False 21.0s rate=780/h ETA4min
+[11:24:56] [151/208]acc2/w0 C10#1 ok=True ans=1137 cites=18/24 search=True brand=True 22.5s rate=776/h ETA4min
+[11:24:57] [152/208]acc2/w2 C10#2 ok=True ans=1185 cites=18/24 search=True brand=True 24.0s rate=781/h ETA4min
+[11:24:59] [153/208]acc3/w2 X01#1 ok=True ans=858 cites=11/15 search=True brand=False 21.0s rate=783/h ETA4min
+[11:25:11] [154/208]acc3/w0 X01#2 ok=True ans=1012 cites=11/16 search=True brand=False 22.5s rate=776/h ETA4min
+[11:25:16] [155/208]acc2/w1 X02#1 ok=True ans=1036 cites=15/21 search=True brand=False 15.0s rate=775/h ETA4min
+[11:25:18] [156/208]acc1/w0 X02#2 ok=True ans=1101 cites=14/20 search=True brand=False 21.0s rate=778/h ETA4min
+[11:25:22] [157/208]acc1/w1 X03#1 ok=True ans=1196 cites=15/22 search=True brand=False 13.5s rate=778/h ETA4min
+[11:25:25] [158/208]acc3/w1 X03#2 ok=True ans=1090 cites=12/19 search=True brand=False 7.5s rate=780/h ETA4min
+[11:25:28] [159/208]acc1/w2 X04#1 ok=True ans=1127 cites=12/24 search=True brand=False 16.5s rate=781/h ETA4min
+[11:25:33] [160/208]acc2/w2 X05#1 ok=True ans=930 cites=11/16 search=True brand=False 22.5s rate=781/h ETA4min
+[11:25:36] [161/208]acc3/w2 X05#2 ok=True ans=1009 cites=15/20 search=True brand=False 22.5s rate=783/h ETA4min
+[11:25:38] [162/208]acc2/w0 X04#2 ok=True ans=998 cites=8/14 search=True brand=False 16.5s rate=786/h ETA4min
+[11:25:42] [163/208]acc3/w0 X06#1 ok=True ans=590 cites=14/20 search=True brand=False 12.0s rate=786/h ETA3min
+[11:25:47] [164/208]acc2/w1 X06#2 ok=True ans=527 cites=15/21 search=True brand=False 13.5s rate=786/h ETA3min
+[11:25:51] [165/208]acc1/w0 X07#1 ok=True ans=998 cites=17/23 search=True brand=False 19.5s rate=786/h ETA3min
+[11:26:01] [166/208]acc3/w1 X08#1 ok=True ans=979 cites=8/17 search=True brand=False 16.5s rate=781/h ETA3min
+[11:26:03] [167/208]acc1/w1 X07#2 ok=True ans=1076 cites=16/22 search=True brand=False 16.5s rate=783/h ETA3min
+[11:26:05] [168/208]acc1/w2 X08#2 ok=True ans=1141 cites=12/22 search=True brand=False 19.5s rate=786/h ETA3min
+[11:26:06] [169/208]acc2/w2 X09#1 ok=True ans=864 cites=18/20 search=True brand=False 21.0s rate=790/h ETA3min
+[11:26:08] [170/208]acc3/w2 X09#2 ok=True ans=750 cites=18/21 search=True brand=False 19.5s rate=793/h ETA3min
+[11:26:16] [171/208]acc2/w0 X10#1 ok=True ans=1101 cites=18/21 search=True brand=False 21.0s rate=789/h ETA3min
+[11:26:21] [172/208]acc2/w1 X11#1 ok=True ans=843 cites=17/23 search=True brand=False 18.0s rate=789/h ETA3min
+[11:26:21] [173/208]acc3/w0 X10#2 ok=True ans=966 cites=10/13 search=True brand=False 21.0s rate=793/h ETA3min
+[11:26:26] [174/208]acc1/w0 X11#2 ok=True ans=872 cites=17/22 search=True brand=False 21.0s rate=792/h ETA3min
+[11:26:38] [175/208]acc3/w1 X12#1 ok=True ans=824 cites=15/18 search=True brand=False 13.5s rate=786/h ETA3min
+[11:26:38] [176/208]acc3/w2 R02#1 ok=True ans=892 cites=16/22 search=True brand=True 16.5s rate=789/h ETA2min
+[11:26:39] [177/208]acc2/w2 R01#2 ok=True ans=981 cites=16/22 search=True brand=True 19.5s rate=793/h ETA2min
+[11:26:42] [178/208]acc1/w1 X12#2 ok=True ans=977 cites=11/15 search=True brand=False 12.0s rate=795/h ETA2min
+[11:26:46] [179/208]acc1/w2 R01#1 ok=True ans=1029 cites=17/23 search=True brand=True 16.5s rate=795/h ETA2min
+[11:26:50] [180/208]acc3/w0 R03#2 ok=True ans=456 cites=10/10 search=True brand=True 9.0s rate=796/h ETA2min
+[11:26:52] [181/208]acc2/w1 R03#1 ok=True ans=516 cites=12/12 search=True brand=True 10.5s rate=799/h ETA2min
+[11:26:57] [182/208]acc2/w0 R02#2 ok=True ans=907 cites=11/17 search=True brand=True 15.0s rate=798/h ETA2min
+[11:27:04] [183/208]acc1/w0 R04#1 ok=True ans=976 cites=15/21 search=True brand=True 22.5s rate=796/h ETA2min
+[11:27:09] [184/208]acc2/w2 R05#2 ok=True ans=1018 cites=16/22 search=True brand=True 18.0s rate=795/h ETA2min
+[11:27:10] [185/208]acc3/w2 R05#1 ok=True ans=963 cites=18/24 search=True brand=True 16.5s rate=799/h ETA2min
+[11:27:11] [186/208]acc3/w1 R04#2 ok=True ans=844 cites=17/23 search=True brand=True 10.5s rate=802/h ETA2min
+[11:27:16] [187/208]acc1/w1 R06#1 ok=True ans=824 cites=18/27 search=True brand=True 9.0s rate=801/h ETA2min
+[11:27:19] [188/208]acc1/w2 R06#2 ok=True ans=743 cites=18/24 search=True brand=True 9.0s rate=802/h ETA1min
+[11:27:26] [189/208]acc2/w1 R07#2 ok=True ans=828 cites=12/12 search=True brand=True 15.0s rate=800/h ETA1min
+[11:27:29] [190/208]acc1/w0 R08#2 ok=True ans=543 cites=10/10 search=True brand=True 12.0s rate=801/h ETA1min
+[11:27:30] [191/208]acc2/w0 R08#1 ok=True ans=723 cites=10/16 search=True brand=True 13.5s rate=805/h ETA1min
+[11:27:31] [192/208]acc3/w0 R07#1 ok=True ans=903 cites=21/21 search=True brand=True 19.5s rate=808/h ETA1min
+[11:27:38] [193/208]acc3/w2 T01#2 ok=True ans=655 cites=17/21 search=True brand=True 13.5s rate=806/h ETA1min
+[11:27:38] [194/208]acc2/w2 T01#1 ok=True ans=748 cites=18/21 search=True brand=True 16.5s rate=810/h ETA1min
+[11:27:39] [195/208]acc3/w1 T02#1 ok=True ans=421 cites=12/12 search=True brand=True 7.5s rate=814/h ETA1min
+[11:27:45] [196/208]acc1/w1 T02#2 ok=True ans=496 cites=12/12 search=True brand=True 6.0s rate=811/h ETA1min
+[11:27:51] [197/208]acc1/w0 T04#2 ok=True ans=310 cites=14/11 search=True brand=True 7.5s rate=810/h ETA1min
+[11:27:54] [198/208]acc1/w2 T03#1 ok=True ans=664 cites=15/15 search=True brand=True 15.0s rate=811/h ETA1min
+[11:27:54] [199/208]acc2/w1 T03#2 ok=True ans=513 cites=16/16 search=True brand=True 9.0s rate=815/h ETA1min
+[11:27:58] [200/208]acc2/w0 T04#1 ok=True ans=287 cites=14/11 search=True brand=True 4.5s rate=816/h ETA1min
+[11:28:05] [201/208]acc3/w0 T05#1 ok=True ans=714 cites=17/23 search=True brand=True 9.0s rate=814/h ETA1min
+[11:28:08] [202/208]acc3/w2 T05#2 ok=True ans=811 cites=14/20 search=True brand=True 16.5s rate=815/h ETA0min
+[11:28:09] [203/208]acc2/w2 T06#1 ok=True ans=925 cites=19/25 search=True brand=True 18.0s rate=818/h ETA0min
+[11:28:12] [204/208]acc1/w1 T07#1 ok=True ans=328 cites=12/12 search=True brand=True 4.5s rate=820/h ETA0min
+[11:28:13] [205/208]acc3/w1 T06#2 ok=True ans=708 cites=15/20 search=True brand=True 13.5s rate=823/h ETA0min
+[11:28:15] [206/208]acc1/w0 T07#2 ok=True ans=322 cites=12/12 search=True brand=True 9.0s rate=825/h ETA0min
+[11:28:29] [207/208]acc2/w1 T08#2 ok=True ans=797 cites=17/21 search=True brand=True 19.5s rate=816/h ETA0min
+[11:28:30] [208/208]acc1/w2 T08#1 ok=True ans=917 cites=17/26 search=True brand=True 18.0s rate=819/h ETA0min
+[11:28:32] 完成：208 成功 / 0 失败 / 共 208 条；用时 15.3 分钟，吞吐 818 条/小时

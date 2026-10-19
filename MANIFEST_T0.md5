@@ -1,0 +1,9 @@
+fb455a60cf2396f453651682a5d9ffe4  data/chair_samples.jsonl
+ddeded3e01067006943d4ef91e3b5233  data/samples.jsonl
+6148d996207f5a8485428f3bf88f3100  data/spa_samples.jsonl
+baa82ba50db60f3f164fe4ed5e0238a3  data/deepseek/ds_beauty_baseline.jsonl
+631e6625cac6cda6df02a17d7e396199  data/deepseek/ds_chair_baseline.jsonl
+eb0884d88a4b6ba0596eab766f231ba9  data/deepseek/ds_spa_baseline.jsonl
+cf2e88fef0c154ce36a7d1022d07e2e1  prompts/anmo_chair_v1.json
+6e83570c939c73ef371ecaa771ebe88d  prompts/meirongyi_final_v2.json
+6c3132b15265312230f579f0275a54e2  prompts/shenzhen_spa_v1.json

@@ -1,0 +1,71 @@
+[16:31:20] 品牌表：own=['水裹']｜竞品 10 项：['汤悦', 'HEATJOY', 'heatjoy', '汤崎', 'TENZ', '阿奇拉', '熹汤', '大江户']...
+[16:31:21] CDP 9222 就绪
+[16:31:25] 关闭多余标签页：https://www.doubao.com/chat/38446372783054850
+[16:31:25] 关闭多余标签页：https://www.doubao.com/chat/
+[16:31:25] 关闭多余标签页：https://www.doubao.com/chat/38446183646314242
+[16:31:30] 页面池就绪：3 个标签页（并行度 3，已开焦点模拟+禁用后台节流）
+[16:31:33] 待跑 63 条（已跳过 197 条）；估算 21–37 分钟
+[16:32:07] [1/63]w2 B04#5 ok=True ans=1105 cites=15/20 search=True brand=True 22.5s err=- ETA35min
+[16:32:12] [2/63]w0 B04#3 ok=True ans=1098 cites=11/17 search=True brand=True 25.5s err=- ETA20min
+[16:32:15] [3/63]w1 B04#4 ok=True ans=1351 cites=16/22 search=True brand=True 30.0s err=- ETA14min
+[16:32:45] [4/63]w2 B05#3 ok=True ans=1118 cites=9/14 search=True brand=False 27.0s err=- ETA18min
+[16:32:48] [5/63]w0 B05#4 ok=True ans=1168 cites=9/19 search=True brand=False 25.5s err=- ETA15min
+[16:32:56] [6/63]w1 B05#5 ok=True ans=1193 cites=10/15 search=True brand=False 30.0s err=- ETA13min
+[16:33:25] [7/63]w2 B08#3 ok=True ans=1099 cites=27/30 search=True brand=True 28.5s err=- ETA15min
+[16:33:32] [8/63]w0 B08#4 ok=True ans=1308 cites=27/31 search=True brand=True 31.5s err=- ETA14min
+[16:33:32] [9/63]w1 B08#5 ok=True ans=943 cites=10/14 search=True brand=False 24.0s err=- ETA12min
+[16:34:00] [10/63]w2 B12#3 ok=True ans=968 cites=12/12 search=True brand=True 25.5s err=- ETA13min
+[16:34:12] [11/63]w1 B12#5 ok=True ans=1038 cites=11/11 search=True brand=True 27.0s err=- ETA13min
+[16:34:15] [12/63]w0 B12#4 ok=True ans=1220 cites=12/12 search=True brand=True 31.5s err=- ETA11min
+[16:34:44] [13/63]w2 B19#3 ok=True ans=1273 cites=10/15 search=True brand=True 33.0s err=- ETA12min
+[16:34:56] [14/63]w0 B19#5 ok=True ans=1083 cites=35/39 search=True brand=True 28.5s err=- ETA12min
+[16:34:57] [15/63]w1 B19#4 ok=True ans=1341 cites=10/16 search=True brand=False 31.5s err=- ETA11min
+[16:35:27] [16/63]w2 B20#3 ok=True ans=1144 cites=10/15 search=True brand=False 30.0s err=- ETA11min
+[16:35:37] [17/63]w1 B20#5 ok=True ans=1085 cites=10/16 search=True brand=False 28.5s err=- ETA11min
+[16:35:38] [18/63]w0 B20#4 ok=True ans=1091 cites=9/14 search=True brand=True 30.0s err=- ETA10min
+[16:36:06] [19/63]w2 P05#1 ok=True ans=971 cites=11/15 search=True brand=True 27.0s err=- ETA11min
+[16:36:17] [20/63]w1 P05#2 ok=True ans=1021 cites=12/16 search=True brand=True 28.5s err=- ETA10min
+[16:36:19] [21/63]w0 P05#3 ok=True ans=1046 cites=11/15 search=True brand=True 28.5s err=- ETA10min
+[16:36:43] [22/63]w2 P05#4 ok=True ans=844 cites=12/16 search=True brand=True 25.5s err=- ETA10min
+[16:36:55] [23/63]w1 P05#5 ok=True ans=994 cites=12/16 search=True brand=True 25.5s err=- ETA9min
+[16:36:59] [24/63]w0 P07#3 ok=True ans=960 cites=10/16 search=True brand=False 27.0s err=- ETA9min
+[16:37:21] [25/63]w2 P07#4 ok=True ans=912 cites=9/15 search=True brand=False 27.0s err=- ETA9min
+[16:37:38] [26/63]w1 P07#5 ok=True ans=1169 cites=26/32 search=True brand=False 30.0s err=- ETA9min
+[16:37:40] [27/63]w0 N09#3 ok=True ans=1021 cites=11/15 search=True brand=False 28.5s err=- ETA8min
+[16:38:03] [28/63]w2 N09#4 ok=True ans=1088 cites=10/14 search=True brand=False 30.0s err=- ETA8min
+[16:38:16] [29/63]w1 N09#5 ok=True ans=1003 cites=11/16 search=True brand=False 25.5s err=- ETA8min
+[16:38:20] [30/63]w0 D01#3 ok=True ans=999 cites=10/15 search=True brand=True 27.0s err=- ETA7min
+[16:38:36] [31/63]w2 D01#4 ok=True ans=866 cites=11/20 search=True brand=True 21.0s err=- ETA7min
+[16:38:52] [32/63]w1 D01#5 ok=True ans=833 cites=10/15 search=True brand=True 24.0s err=- ETA7min
+[16:39:03] [33/63]w0 D02#3 ok=True ans=937 cites=10/18 search=True brand=True 30.0s err=- ETA7min
+[16:39:14] [34/63]w2 D02#4 ok=True ans=874 cites=10/16 search=True brand=True 27.0s err=- ETA7min
+[16:39:34] [35/63]w1 D02#5 ok=True ans=1043 cites=10/15 search=True brand=True 28.5s err=- ETA6min
+[16:39:44] [36/63]w0 D06#3 ok=True ans=1090 cites=11/20 search=True brand=True 27.0s err=- ETA6min
+[16:39:53] [37/63]w2 D06#4 ok=True ans=1244 cites=11/19 search=True brand=True 27.0s err=- ETA6min
+[16:40:17] [38/63]w1 D06#5 ok=True ans=1045 cites=11/17 search=True brand=True 31.5s err=- ETA6min
+[16:40:19] [39/63]w0 D07#3 ok=True ans=919 cites=17/29 search=True brand=False 24.0s err=- ETA5min
+[16:40:26] [40/63]w2 D07#4 ok=True ans=896 cites=9/20 search=True brand=False 21.0s err=- ETA5min
+[16:40:53] [41/63]w1 D07#5 ok=True ans=824 cites=17/29 search=True brand=False 25.5s err=- ETA5min
+[16:40:54] [42/63]w2 I07#4 ok=True ans=751 cites=17/22 search=True brand=False 18.0s err=- ETA5min
+[16:40:56] [43/63]w0 I07#3 ok=True ans=756 cites=17/21 search=True brand=False 25.5s err=- ETA4min
+[16:41:23] [44/63]w1 I07#5 ok=True ans=674 cites=17/21 search=True brand=False 18.0s err=- ETA4min
+[16:41:34] [45/63]w0 C02#4 ok=True ans=1187 cites=11/26 search=True brand=True 25.5s err=- ETA4min
+[16:41:35] [46/63]w2 C02#3 ok=True ans=1117 cites=15/32 search=True brand=True 27.0s err=- ETA4min
+[16:42:01] [47/63]w1 C02#5 ok=True ans=1097 cites=11/21 search=True brand=True 25.5s err=- ETA4min
+[16:42:14] [48/63]w0 C04#3 ok=True ans=1417 cites=12/22 search=True brand=True 27.0s err=- ETA3min
+[16:42:16] [49/63]w2 C04#4 ok=True ans=1203 cites=11/21 search=True brand=True 28.5s err=- ETA3min
+[16:42:41] [50/63]w1 C04#5 ok=True ans=1180 cites=10/18 search=True brand=True 27.0s err=- ETA3min
+[16:42:44] [51/63]w0 X02#3 ok=True ans=543 cites=10/16 search=True brand=False 16.5s err=- ETA3min
+[16:42:46] [52/63]w2 X02#4 ok=True ans=629 cites=9/15 search=True brand=False 19.5s err=- ETA2min
+[16:43:13] [53/63]w1 X02#5 ok=True ans=639 cites=9/15 search=True brand=True 18.0s err=- ETA2min
+[16:43:16] [54/63]w2 X08#4 ok=True ans=582 cites=10/15 search=True brand=True 18.0s err=- ETA2min
+[16:43:20] [55/63]w0 X08#3 ok=True ans=626 cites=15/20 search=True brand=False 21.0s err=- ETA2min
+[16:43:49] [56/63]w1 X08#5 ok=True ans=693 cites=18/23 search=True brand=True 19.5s err=- ETA2min
+[16:43:51] [57/63]w2 X11#3 ok=True ans=776 cites=12/18 search=True brand=True 22.5s err=- ETA1min
+[16:43:54] [58/63]w0 X11#4 ok=True ans=653 cites=12/18 search=True brand=True 21.0s err=- ETA1min
+[16:44:17] [59/63]w2 T08#2 ok=True ans=390 cites=9/15 search=True brand=True 13.5s err=- ETA1min
+[16:44:21] [60/63]w0 T08#3 ok=True ans=318 cites=9/15 search=True brand=True 13.5s err=- ETA1min
+[16:44:27] [61/63]w1 X11#5 ok=True ans=748 cites=12/18 search=True brand=False 22.5s err=- ETA0min
+[16:44:42] [62/63]w2 T08#4 ok=True ans=286 cites=9/15 search=True brand=True 13.5s err=- ETA0min
+[16:44:48] [63/63]w0 T08#5 ok=True ans=345 cites=9/15 search=True brand=True 15.0s err=- ETA0min
+[16:44:50] 完成：63/63 成功

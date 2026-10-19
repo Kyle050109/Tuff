@@ -1,0 +1,57 @@
+============================================================
+[口径] anmo_chair_v1.json · own=['松胜', 'songsheng'] · 竞品 21 项
+【1】总览  query 104 · 引用 1040 · 去重 URL 671
+  含本品牌 222 · 含竞品 440 · 中性 378
+  本品牌占引用比 21.3%
+
+【2】引用域名 Top 12（引用条目口径）
+  zhuanlan.zhihu.com            189   18.2%
+  zhihu.com                     120   11.5%
+  pingwest.com                   84    8.1%
+  pconline.com.cn                46    4.4%
+  diy.zol.com.cn                 41    3.9%
+  post.smzdm.com                 38    3.7%
+  tech.cheaa.com                 36    3.5%
+  news.zol.com.cn                25    2.4%
+  jianghu.taobao.com             25    2.4%
+  world.taobao.com               20    1.9%
+  snm0516.aisee.tv               19    1.8%
+  smzdm.com                      16    1.5%
+
+  ↳ 含本品牌引用的来源域名 Top 12
+    zhuanlan.zhihu.com           75
+    zhihu.com                    39
+    pingwest.com                 25
+    coatingol.com                11
+    bbs.jatxh.cn                 10
+    tousu.sina.com.cn             7
+    csjwdy.cn                     7
+    tousu.sina.cn                 6
+    news.zol.com.cn               5
+    mall.jd.com                   5
+    bbs.zentong.com               4
+    csjcs.com                     3
+  抖音域名合计 5（0.5%）
+
+【3】品牌 query 覆盖（该 query 结果中 ≥1 条命中，分母 104）· 命中引用条数 · 命中去重 URL
+  奥佳华          65/104 =  62.5%   引用  279   URL  154
+  荣泰           65/104 =  62.5%   引用  236   URL  133
+  西屋           49/104 =  47.1%   引用  152   URL  106
+  ★松胜          38/104 =  36.5%   引用  222   URL  128
+  傲胜           38/104 =  36.5%   引用   86   URL   54
+  海尔           25/104 =  24.0%   引用   37   URL   22
+  芝华仕          23/104 =  22.1%   引用   45   URL   32
+  迪斯           23/104 =  22.1%   引用   57   URL   33
+  佳仁            5/104 =   4.8%   引用   22   URL   18
+
+【4】本品牌缺席 query 66/104（样例前 10）
+  · 三千左右的按摩椅推荐
+  · 两万以上的顶级按摩椅推荐
+  · 个子高的人适合什么按摩椅
+  · 京东上口碑好的按摩椅
+  · 体重大的人用什么按摩椅
+  · 佳仁按摩椅是杂牌吗
+  · 佳仁按摩椅质量怎么样
+  · 傲胜的按摩椅值得买吗
+  · 入门级按摩椅推荐
+  · 全家老小都能用的按摩椅

@@ -1,0 +1,58 @@
+============================================================
+[口径] shenzhen_spa_v1.json · own=['水裹'] · 竞品 10 项
+【1】总览  query 100 · 引用 991 · 去重 URL 374
+  含本品牌 261 · 含竞品 222 · 中性 508
+  本品牌占引用比 26.3%
+
+【2】引用域名 Top 12（引用条目口径）
+  tw.trip.com                   191   19.3%
+  zhuanlan.zhihu.com            146   14.7%
+  ulifestyle.com.hk              93    9.4%
+  chinatimes.com                 48    4.8%
+  klook.cn                       40    4.0%
+  zhihu.com                      33    3.3%
+  hopegoo.com                    31    3.1%
+  m.weibo.cn                     18    1.8%
+  agoda.cn                       16    1.6%
+  utravel.com.hk                 16    1.6%
+  jp.trip.com                    16    1.6%
+  stheadline.com                 15    1.5%
+
+  ↳ 含本品牌引用的来源域名 Top 12
+    zhuanlan.zhihu.com           73
+    chinatimes.com               35
+    zhihu.com                    26
+    tw.trip.com                  19
+    klook.cn                     17
+    m.weibo.cn                    9
+    kinliu.hk                     8
+    m.toutiao.com                 8
+    weibo.com                     6
+    jp.trip.com                   6
+    baike.baidu.com               6
+    hk.trip.com                   5
+  抖音域名合计 2（0.2%）
+
+  ⚠ query 有重复：100 行 / 95 个不同 query——覆盖率分母用不同 query 数
+
+【3】品牌 query 覆盖（该 query 结果中 ≥1 条命中，分母 95）· 命中引用条数 · 命中去重 URL
+  ★水裹          55/95 =  57.9%   引用  261   URL   91
+  汤崎           47/95 =  49.5%   引用   97   URL   33
+  阿奇拉          36/95 =  37.9%   引用   91   URL   28
+  汤悦           12/95 =  12.6%   引用   40   URL   28
+  熹汤            7/95 =   7.4%   引用   12   URL   10
+  大江户           3/95 =   3.2%   引用   14   URL   14
+  极乐汤           2/95 =   2.1%   引用    8   URL    8
+  泉之源           1/95 =   1.1%   引用    4   URL    4
+
+【4】本品牌缺席 query 40/95（样例前 10）
+  · 出差深圳想放松去哪家汤泉
+  · 大江户汤泉深圳有店吗
+  · 大江户温泉物语值得去吗
+  · 带小孩去深圳哪家汤泉合适
+  · 极乐汤和汤悦怎么选
+  · 汤崎值得去吗
+  · 汤崎汤泉深圳店怎么样
+  · 汤悦和汤崎哪个好
+  · 汤悦汤泉怎么样
+  · 泉之源汤泉怎么样

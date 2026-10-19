@@ -1,0 +1,6 @@
+out/
+__pycache__/
+data/.ds_api_key
+data/final_*_numbers.json
+data/chair_numbers.json
+data/spa_numbers.json

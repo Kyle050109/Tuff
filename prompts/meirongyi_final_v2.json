@@ -1,0 +1,787 @@
+{
+ "meta": {
+  "name": "美容仪品类_GEO基线_最终版",
+  "version": "v2",
+  "date": "2026-10-08",
+  "total": 114,
+  "note": "品牌词层(R/T/C01/C05/C09)不新增，作为口径C单列",
+  "repeat_batch": [
+   "B07",
+   "B12",
+   "B16",
+   "B21",
+   "B26",
+   "B29",
+   "X01",
+   "X02",
+   "X03",
+   "X09",
+   "N01",
+   "N04",
+   "N07",
+   "P02",
+   "P03",
+   "P06",
+   "D01",
+   "D02",
+   "B30",
+   "X05"
+  ],
+  "own_brand": [
+   "斐驰",
+   "Fetrex"
+  ],
+  "competitors": [
+   "Ulike",
+   "AMIRO",
+   "宙斯",
+   "雅萌",
+   "初普",
+   "觅光",
+   "极萌",
+   "大排灯",
+   "纽立",
+   "索朗特",
+   "ZIIP",
+   "JOVS",
+   "Nodoor",
+   "花至",
+   "听研",
+   "飞利浦",
+   "欧莱雅",
+   "松下",
+   "康铂",
+   "Orey",
+   "可思美",
+   "倍轻松",
+   "Tripollar",
+   "YA-MAN",
+   "YAMAN"
+  ],
+  "analysis_brands": {
+   "索朗特": [
+    "索朗特"
+   ],
+   "觅光": [
+    "觅光"
+   ],
+   "大排灯": [
+    "大排灯"
+   ],
+   "极萌": [
+    "极萌"
+   ],
+   "雅萌": [
+    "雅萌",
+    "YA-MAN",
+    "YAMAN"
+   ],
+   "AMIRO": [
+    "AMIRO"
+   ],
+   "宙斯": [
+    "宙斯"
+   ],
+   "纽立": [
+    "纽立"
+   ],
+   "初普": [
+    "初普",
+    "Tripollar"
+   ]
+  },
+  "layer_assert": {
+   "A1": 156,
+   "A2": 34,
+   "B": 8,
+   "C": 28
+  },
+  "meta_backfill_note": "2026-10-10 按审核 B3 回填（与 analyze_final.py 内默认常量等值）；回填后跑回归确认输出零变化"
+ },
+ "prompts": [
+  {
+   "id": "I01",
+   "intent": "信息型",
+   "text": "美容仪到底有没有用",
+   "brand_query": false
+  },
+  {
+   "id": "I02",
+   "intent": "信息型",
+   "text": "射频美容仪的工作原理是什么",
+   "brand_query": false
+  },
+  {
+   "id": "I03",
+   "intent": "信息型",
+   "text": "家用美容仪和医美项目有什么区别",
+   "brand_query": false
+  },
+  {
+   "id": "I04",
+   "intent": "信息型",
+   "text": "美容仪每天用会伤皮肤吗",
+   "brand_query": false
+  },
+  {
+   "id": "I05",
+   "intent": "信息型",
+   "text": "什么年龄开始用美容仪合适",
+   "brand_query": false
+  },
+  {
+   "id": "I06",
+   "intent": "信息型",
+   "text": "美容仪的微电流和射频有什么区别",
+   "brand_query": false
+  },
+  {
+   "id": "I07",
+   "intent": "信息型",
+   "text": "美容仪需要搭配什么护肤品",
+   "brand_query": false
+  },
+  {
+   "id": "I08",
+   "intent": "信息型",
+   "text": "家用美容仪多久用一次效果好",
+   "brand_query": false
+  },
+  {
+   "id": "I09",
+   "intent": "信息型",
+   "text": "美容仪真的能抗老吗",
+   "brand_query": false
+  },
+  {
+   "id": "I10",
+   "intent": "信息型",
+   "text": "买美容仪要注意哪些参数",
+   "brand_query": false
+  },
+  {
+   "id": "C01",
+   "intent": "对比型",
+   "text": "斐驰和雅萌美容仪哪个好",
+   "brand_query": false
+  },
+  {
+   "id": "C02",
+   "intent": "对比型",
+   "text": "美容仪哪个牌子好 斐驰和初普怎么选",
+   "brand_query": false
+  },
+  {
+   "id": "C03",
+   "intent": "对比型",
+   "text": "宙斯和雅萌美容仪对比哪个好",
+   "brand_query": false
+  },
+  {
+   "id": "C04",
+   "intent": "对比型",
+   "text": "国产美容仪和进口美容仪哪个好",
+   "brand_query": false
+  },
+  {
+   "id": "C05",
+   "intent": "对比型",
+   "text": "斐驰美容仪和极萌哪个值得买",
+   "brand_query": false
+  },
+  {
+   "id": "C06",
+   "intent": "对比型",
+   "text": "射频美容仪和微电流美容仪哪个好",
+   "brand_query": false
+  },
+  {
+   "id": "C07",
+   "intent": "对比型",
+   "text": "一千块和三千块的美容仪差在哪",
+   "brand_query": false
+  },
+  {
+   "id": "C08",
+   "intent": "对比型",
+   "text": "初普和觅光美容仪哪个效果更好",
+   "brand_query": false
+  },
+  {
+   "id": "C09",
+   "intent": "对比型",
+   "text": "斐驰美容仪和大排灯哪个更有用",
+   "brand_query": false
+  },
+  {
+   "id": "C10",
+   "intent": "对比型",
+   "text": "美容仪是买贵的好还是买对的好",
+   "brand_query": false
+  },
+  {
+   "id": "B01",
+   "intent": "榜单型",
+   "text": "2026年最值得买的美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "B02",
+   "intent": "榜单型",
+   "text": "美容仪排行榜前十名",
+   "brand_query": false
+  },
+  {
+   "id": "B03",
+   "intent": "榜单型",
+   "text": "2000元以内美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "B04",
+   "intent": "榜单型",
+   "text": "送女朋友美容仪推荐哪个牌子",
+   "brand_query": false
+  },
+  {
+   "id": "B05",
+   "intent": "榜单型",
+   "text": "适合新手的美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "B06",
+   "intent": "榜单型",
+   "text": "抗初老美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "B07",
+   "intent": "榜单型",
+   "text": "性价比高的家用美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "B08",
+   "intent": "榜单型",
+   "text": "提拉紧致效果好的美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "B09",
+   "intent": "榜单型",
+   "text": "明星同款美容仪有哪些值得买",
+   "brand_query": false
+  },
+  {
+   "id": "B10",
+   "intent": "榜单型",
+   "text": "小红书爆款美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "R01",
+   "intent": "声誉型",
+   "text": "斐驰美容仪是智商税吗",
+   "brand_query": true
+  },
+  {
+   "id": "R02",
+   "intent": "声誉型",
+   "text": "斐驰美容仪怎么样 真实评价",
+   "brand_query": true
+  },
+  {
+   "id": "R03",
+   "intent": "声誉型",
+   "text": "斐驰美容仪的缺点是什么",
+   "brand_query": true
+  },
+  {
+   "id": "R04",
+   "intent": "声誉型",
+   "text": "斐驰美容仪口碑如何",
+   "brand_query": true
+  },
+  {
+   "id": "R05",
+   "intent": "声誉型",
+   "text": "斐驰这个牌子靠谱吗",
+   "brand_query": true
+  },
+  {
+   "id": "R06",
+   "intent": "声誉型",
+   "text": "斐驰美容仪用了会烂脸吗",
+   "brand_query": true
+  },
+  {
+   "id": "R07",
+   "intent": "声誉型",
+   "text": "斐驰美容仪值得买吗",
+   "brand_query": true
+  },
+  {
+   "id": "R08",
+   "intent": "声誉型",
+   "text": "斐驰美容仪售后怎么样",
+   "brand_query": true
+  },
+  {
+   "id": "R09",
+   "intent": "声誉型",
+   "text": "斐驰和三面美容仪是一个牌子吗",
+   "brand_query": true
+  },
+  {
+   "id": "R10",
+   "intent": "声誉型",
+   "text": "斐驰美容仪为什么这么便宜",
+   "brand_query": true
+  },
+  {
+   "id": "T01",
+   "intent": "交易型",
+   "text": "斐驰美容仪在哪里买是正品",
+   "brand_query": true
+  },
+  {
+   "id": "T02",
+   "intent": "交易型",
+   "text": "斐驰美容仪天猫旗舰店和京东哪个便宜",
+   "brand_query": true
+  },
+  {
+   "id": "T03",
+   "intent": "交易型",
+   "text": "斐驰美容仪多少钱一台",
+   "brand_query": true
+  },
+  {
+   "id": "T04",
+   "intent": "交易型",
+   "text": "斐驰美容仪有优惠活动吗",
+   "brand_query": true
+  },
+  {
+   "id": "T05",
+   "intent": "交易型",
+   "text": "斐驰美容仪保修多久",
+   "brand_query": true
+  },
+  {
+   "id": "T06",
+   "intent": "交易型",
+   "text": "斐驰美容仪支持七天无理由退货吗",
+   "brand_query": true
+  },
+  {
+   "id": "T07",
+   "intent": "交易型",
+   "text": "斐驰美容仪官方旗舰店是哪家",
+   "brand_query": true
+  },
+  {
+   "id": "T08",
+   "intent": "交易型",
+   "text": "斐驰美容仪可以分期吗",
+   "brand_query": true
+  },
+  {
+   "id": "T09",
+   "intent": "交易型",
+   "text": "斐驰美容仪发货快吗",
+   "brand_query": true
+  },
+  {
+   "id": "T10",
+   "intent": "交易型",
+   "text": "斐驰美容仪适合送人吗",
+   "brand_query": true
+  },
+  {
+   "id": "B11",
+   "intent": "榜单型",
+   "text": "家用美容仪哪个牌子好用",
+   "brand_query": false
+  },
+  {
+   "id": "B12",
+   "intent": "榜单型",
+   "text": "美容仪哪个品牌值得买",
+   "brand_query": false
+  },
+  {
+   "id": "B13",
+   "intent": "榜单型",
+   "text": "国产美容仪推荐哪个好",
+   "brand_query": false
+  },
+  {
+   "id": "B14",
+   "intent": "榜单型",
+   "text": "美容仪十大品牌有哪些",
+   "brand_query": false
+  },
+  {
+   "id": "B15",
+   "intent": "榜单型",
+   "text": "好用的美容仪测评推荐",
+   "brand_query": false
+  },
+  {
+   "id": "B16",
+   "intent": "榜单型",
+   "text": "值得入手的美容仪有哪些",
+   "brand_query": false
+  },
+  {
+   "id": "B17",
+   "intent": "榜单型",
+   "text": "美容仪买什么牌子好",
+   "brand_query": false
+  },
+  {
+   "id": "B18",
+   "intent": "榜单型",
+   "text": "口碑好的美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "B19",
+   "intent": "榜单型",
+   "text": "美容仪怎么选不踩坑",
+   "brand_query": false
+  },
+  {
+   "id": "B20",
+   "intent": "榜单型",
+   "text": "1000到3000元美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "B21",
+   "intent": "榜单型",
+   "text": "美容仪销量最好的是哪个牌子",
+   "brand_query": false
+  },
+  {
+   "id": "B22",
+   "intent": "榜单型",
+   "text": "直播间卖得好的美容仪有哪些",
+   "brand_query": false
+  },
+  {
+   "id": "B23",
+   "intent": "榜单型",
+   "text": "美容仪哪个牌子口碑最好",
+   "brand_query": false
+  },
+  {
+   "id": "B24",
+   "intent": "榜单型",
+   "text": "家用美容仪品牌排名",
+   "brand_query": false
+  },
+  {
+   "id": "B25",
+   "intent": "榜单型",
+   "text": "美容仪器家用推荐买哪个",
+   "brand_query": false
+  },
+  {
+   "id": "B26",
+   "intent": "榜单型",
+   "text": "现在最火的美容仪是什么",
+   "brand_query": false
+  },
+  {
+   "id": "B27",
+   "intent": "榜单型",
+   "text": "美容仪有哪些值得买的品牌",
+   "brand_query": false
+  },
+  {
+   "id": "B28",
+   "intent": "榜单型",
+   "text": "美容仪买国产还是进口",
+   "brand_query": false
+  },
+  {
+   "id": "B29",
+   "intent": "榜单型",
+   "text": "高性价比美容仪有哪些",
+   "brand_query": false
+  },
+  {
+   "id": "B30",
+   "intent": "榜单型",
+   "text": "美容仪店铺推荐 靠谱的",
+   "brand_query": false
+  },
+  {
+   "id": "P01",
+   "intent": "人群场景",
+   "text": "30岁女生用什么美容仪",
+   "brand_query": false
+  },
+  {
+   "id": "P02",
+   "intent": "人群场景",
+   "text": "40岁抗老美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "P03",
+   "intent": "人群场景",
+   "text": "送妈妈什么美容仪比较合适",
+   "brand_query": false
+  },
+  {
+   "id": "P04",
+   "intent": "人群场景",
+   "text": "送女朋友美容仪选哪个",
+   "brand_query": false
+  },
+  {
+   "id": "P05",
+   "intent": "人群场景",
+   "text": "学生党适合的美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "P06",
+   "intent": "人群场景",
+   "text": "敏感肌能用美容仪吗 推荐",
+   "brand_query": false
+  },
+  {
+   "id": "P07",
+   "intent": "人群场景",
+   "text": "熬夜党美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "P08",
+   "intent": "人群场景",
+   "text": "男性可以用美容仪吗 推荐",
+   "brand_query": false
+  },
+  {
+   "id": "P09",
+   "intent": "人群场景",
+   "text": "新手入门美容仪推荐",
+   "brand_query": false
+  },
+  {
+   "id": "P10",
+   "intent": "人群场景",
+   "text": "上班族下班护肤仪器推荐",
+   "brand_query": false
+  },
+  {
+   "id": "P11",
+   "intent": "人群场景",
+   "text": "面部松弛下垂用什么仪器",
+   "brand_query": false
+  },
+  {
+   "id": "P12",
+   "intent": "人群场景",
+   "text": "产后皮肤松弛怎么改善 仪器",
+   "brand_query": false
+  },
+  {
+   "id": "N01",
+   "intent": "需求功效",
+   "text": "法令纹用什么美容仪改善",
+   "brand_query": false
+  },
+  {
+   "id": "N02",
+   "intent": "需求功效",
+   "text": "下颌线不清晰怎么改善",
+   "brand_query": false
+  },
+  {
+   "id": "N03",
+   "intent": "需求功效",
+   "text": "眼周细纹用什么仪器",
+   "brand_query": false
+  },
+  {
+   "id": "N04",
+   "intent": "需求功效",
+   "text": "提拉紧致的家用仪器推荐",
+   "brand_query": false
+  },
+  {
+   "id": "N05",
+   "intent": "需求功效",
+   "text": "补水导入仪哪个好用",
+   "brand_query": false
+  },
+  {
+   "id": "N06",
+   "intent": "需求功效",
+   "text": "光子嫩肤仪器家用推荐",
+   "brand_query": false
+  },
+  {
+   "id": "N07",
+   "intent": "需求功效",
+   "text": "大排灯有没有用 推荐哪个",
+   "brand_query": false
+  },
+  {
+   "id": "N08",
+   "intent": "需求功效",
+   "text": "毛孔粗大用什么仪器改善",
+   "brand_query": false
+  },
+  {
+   "id": "N09",
+   "intent": "需求功效",
+   "text": "脸部暗沉用什么美容仪",
+   "brand_query": false
+  },
+  {
+   "id": "N10",
+   "intent": "需求功效",
+   "text": "瘦脸提拉仪器哪个有效",
+   "brand_query": false
+  },
+  {
+   "id": "N11",
+   "intent": "需求功效",
+   "text": "淡化皱纹的家用仪器推荐",
+   "brand_query": false
+  },
+  {
+   "id": "N12",
+   "intent": "需求功效",
+   "text": "面部按摩仪哪个牌子好",
+   "brand_query": false
+  },
+  {
+   "id": "D01",
+   "intent": "品类决策",
+   "text": "美容仪是智商税吗",
+   "brand_query": false
+  },
+  {
+   "id": "D02",
+   "intent": "品类决策",
+   "text": "家用美容仪值不值得买",
+   "brand_query": false
+  },
+  {
+   "id": "D03",
+   "intent": "品类决策",
+   "text": "美容仪和去医院做医美哪个划算",
+   "brand_query": false
+  },
+  {
+   "id": "D04",
+   "intent": "品类决策",
+   "text": "美容仪用多久能看到效果",
+   "brand_query": false
+  },
+  {
+   "id": "D05",
+   "intent": "品类决策",
+   "text": "家用美容仪会不会伤皮肤",
+   "brand_query": false
+  },
+  {
+   "id": "D06",
+   "intent": "品类决策",
+   "text": "美容仪买回来会不会吃灰",
+   "brand_query": false
+  },
+  {
+   "id": "D07",
+   "intent": "品类决策",
+   "text": "美容仪能替代美容院吗",
+   "brand_query": false
+  },
+  {
+   "id": "D08",
+   "intent": "品类决策",
+   "text": "美容仪每天用还是隔天用",
+   "brand_query": false
+  },
+  {
+   "id": "X01",
+   "intent": "竞品对比",
+   "text": "雅萌和初普哪个值得买",
+   "brand_query": false
+  },
+  {
+   "id": "X02",
+   "intent": "竞品对比",
+   "text": "极萌和觅光哪个好",
+   "brand_query": false
+  },
+  {
+   "id": "X03",
+   "intent": "竞品对比",
+   "text": "宙斯美容仪值得买吗",
+   "brand_query": false
+  },
+  {
+   "id": "X04",
+   "intent": "竞品对比",
+   "text": "大排灯和射频仪哪个更值得买",
+   "brand_query": false
+  },
+  {
+   "id": "X05",
+   "intent": "竞品对比",
+   "text": "国产和日系美容仪怎么选",
+   "brand_query": false
+  },
+  {
+   "id": "X06",
+   "intent": "竞品对比",
+   "text": "雅萌和极萌对比哪个好",
+   "brand_query": false
+  },
+  {
+   "id": "X07",
+   "intent": "竞品对比",
+   "text": "初普和觅光美容仪对比",
+   "brand_query": false
+  },
+  {
+   "id": "X08",
+   "intent": "竞品对比",
+   "text": "Ulike美容仪怎么样值得买吗",
+   "brand_query": false
+  },
+  {
+   "id": "X09",
+   "intent": "竞品对比",
+   "text": "觅光美容仪怎么样",
+   "brand_query": false
+  },
+  {
+   "id": "X10",
+   "intent": "竞品对比",
+   "text": "极萌美容仪值得买吗",
+   "brand_query": false
+  },
+  {
+   "id": "X11",
+   "intent": "竞品对比",
+   "text": "AMIRO和雅萌哪个好",
+   "brand_query": false
+  },
+  {
+   "id": "X12",
+   "intent": "竞品对比",
+   "text": "纽立美容仪怎么样",
+   "brand_query": false
+  }
+ ]
+}
