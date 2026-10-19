@@ -37,6 +37,15 @@ run ds_beauty "$T0/ds_beauty.txt" $PY ds_analyze.py --prompts prompts/meirongyi_
 run ds_chair  "$T0/ds_chair.txt"  $PY ds_analyze.py --prompts prompts/anmo_chair_v1.json --data data/deepseek/ds_chair_baseline.jsonl
 run ds_spa    "$T0/ds_spa.txt"    $PY ds_analyze.py --prompts prompts/shenzhen_spa_v1.json --data data/deepseek/ds_spa_baseline.jsonl
 
+echo "── alias v2 口径（题库 v2/v3）"
+A2=$T0/alias_v2
+run v2_beauty "$A2/beauty.txt" $PY analyze_final.py --prompts prompts/meirongyi_v3.json --data data/samples.jsonl --json-out out/v2_beauty.json
+run v2_chair  "$A2/chair.txt"  $PY analyze_final.py --prompts prompts/anmo_chair_v2.json --data data/chair_samples.jsonl --json-out out/v2_chair.json
+run v2_spa    "$A2/spa.txt"    $PY analyze_final.py --prompts prompts/shenzhen_spa_v2.json --data data/spa_samples.jsonl --json-out out/v2_spa.json
+run v2_ds_beauty "$A2/ds_beauty.txt" $PY ds_analyze.py --prompts prompts/meirongyi_v3.json --data data/deepseek/ds_beauty_baseline.jsonl
+run v2_ds_chair  "$A2/ds_chair.txt"  $PY ds_analyze.py --prompts prompts/anmo_chair_v2.json --data data/deepseek/ds_chair_baseline.jsonl
+run v2_ds_spa    "$A2/ds_spa.txt"    $PY ds_analyze.py --prompts prompts/shenzhen_spa_v2.json --data data/deepseek/ds_spa_baseline.jsonl
+
 echo "── 数据完整性（md5）"
 md5sum -c --quiet MANIFEST_T0.md5 && echo "✓ T0 数据/题库 md5 全部一致" || fail=1
 exit $fail

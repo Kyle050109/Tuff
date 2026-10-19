@@ -1,0 +1,58 @@
+============================================================
+[口径] meirongyi_v3.json · own=['斐驰', 'Fetrex', '斐馳'] · 竞品 34 项
+【1】总览  query 114 · 引用 1140 · 去重 URL 729
+  含本品牌 225 · 含竞品 445 · 中性 470
+  本品牌占引用比 19.7%
+
+【2】引用域名 Top 12（引用条目口径）
+  zhuanlan.zhihu.com            279   24.5%
+  zhihu.com                      73    6.4%
+  imeirongyi.com                 41    3.6%
+  tousu.sina.com.cn              30    2.6%
+  world.taobao.com               28    2.5%
+  m.weibo.cn                     27    2.4%
+  post.smzdm.com                 18    1.6%
+  ubeauty.com.hk                 18    1.6%
+  best.pconline.com.cn           16    1.4%
+  hktvmall.com                   16    1.4%
+  foreo.com                      14    1.2%
+  jbk.39.net                     13    1.1%
+
+  ↳ 含本品牌引用的来源域名 Top 12
+    zhuanlan.zhihu.com           79
+    imeirongyi.com               37
+    tousu.sina.com.cn            27
+    m.weibo.cn                   25
+    zhihu.com                    16
+    ayhome.cn                    11
+    baike.baidu.com              10
+    news.qq.com                   5
+    post.smzdm.com                2
+    world.taobao.com              2
+    wiki.m.smzdm.com              2
+    ce.cn                         1
+  抖音域名合计 5（0.4%）
+
+【3】品牌 query 覆盖（该 query 结果中 ≥1 条命中，分母 114）· 命中引用条数 · 命中去重 URL
+  雅萌           62/114 =  54.4%   引用  299   URL  132
+  极萌           48/114 =  42.1%   引用  197   URL   86
+  觅光           45/114 =  39.5%   引用  182   URL   69
+  AMIRO        44/114 =  38.6%   引用  194   URL   65
+  初普           43/114 =  37.7%   引用  143   URL   60
+  宙斯           37/114 =  32.5%   引用  112   URL   47
+  大排灯          36/114 =  31.6%   引用   79   URL   45
+  ★斐驰          26/114 =  22.8%   引用  225   URL  110
+  纽立            1/114 =   0.9%   引用   10   URL   10
+  索朗特           0/114 =   0.0%   引用    0   URL    0
+
+【4】本品牌缺席 query 88/114（样例前 10）
+  · 1000到3000元美容仪推荐
+  · 2000元以内美容仪推荐
+  · 2026年最值得买的美容仪推荐
+  · 30岁女生用什么美容仪
+  · 40岁抗老美容仪推荐
+  · AMIRO和雅萌哪个好
+  · Ulike美容仪怎么样值得买吗
+  · 一千块和三千块的美容仪差在哪
+  · 上班族下班护肤仪器推荐
+  · 下颌线不清晰怎么改善

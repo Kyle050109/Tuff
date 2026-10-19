@@ -18,7 +18,12 @@
 | `data/` | 豆包采集原始数据；`data/deepseek/` 为 Search API 原始数据 |
 | `archive/T0_2026-10-10/` | **T0 冻结基线**：分析输出存档 + 采集日志（只读） |
 | `MANIFEST_T0.md5` | T0 数据与题库 md5 |
-| `regress.sh` | 一条命令复算全部 T0 数字并与存档比对 |
+| `regress.sh` | 一条命令复算全部数字（T0 口径 + alias v2 口径，共 12 项）并与存档比对 |
+| `alias_scan.py` | 别名漏命中扫描（繁体），新增品牌时必跑 |
+| `OBJECT_SPEC.md` | 测量对象说明（一页纸） |
+| `RETRACTIONS.md` | 撤回与更正记录 |
+| `FOLLOWUP_交接人.md` | 需向交接人跟进的事项 |
+| `prompts/*_v2.json`、`meirongyi_v3.json` | **当前生效题库**（补繁体别名；水裹补 layer_assert）。T0 原题库冻结 |
 
 ## 文件名对照（原始数据包 ↔ 仓库）
 
