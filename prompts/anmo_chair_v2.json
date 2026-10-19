@@ -89,7 +89,57 @@
   "stage2_design": true,
   "stage2_note": "两阶段设计：第一阶段全员 2 遍；第二阶段对 3 条两遍不一致题（B01/B12/N09）加跑 run3-5",
   "alias_v2_note": "2026-10-20 补繁体别名（港台来源漏命中，见 STAGE0_FINDINGS K5）。题面无繁体→分层不变；仅影响答案/引用计数。派生自 anmo_chair_v1.json（T0 冻结版）",
-  "derived_from": "anmo_chair_v1.json"
+  "derived_from": "anmo_chair_v1.json",
+  "channels": {
+   "抖音": [
+    "iesdouyin.com",
+    "douyin.com"
+   ],
+   "今日头条": [
+    "toutiao.com"
+   ],
+   "新闻/门户": [
+    "jiemian.com",
+    "xhby.net",
+    "eastday.com",
+    "sina.cn",
+    "sina.com.cn",
+    "qq.com"
+   ],
+   "电商": [
+    "jd.com",
+    "taobao.com",
+    "tmall.com"
+   ],
+   "评测/导购": [
+    "pconline.com.cn",
+    "zol.com.cn",
+    "smzdm.com",
+    "maigoo.com"
+   ],
+   "竞品官网": [
+    "osim.com",
+    "panasonic.cn",
+    "westinghousecn.com"
+   ],
+   "本品牌官网(待确认域名)": [
+    "songsheng.com"
+   ]
+  },
+  "memory_points": {
+   "keywords": [
+    "4D",
+    "精钢",
+    "机芯",
+    "性价比"
+   ],
+   "brands": [
+    "奥佳华",
+    "荣泰"
+   ],
+   "source": "入门指南 2026-10-10「万元内 4D 精钢机芯」+ 交叉报告「精钢/性价比」；待客户确认"
+  },
+  "channels_note": "2026-10-20 v7：按 T0 豆包引用 Top 域名整理；host 后缀匹配。本品牌官网域名待确认（交接跟进）。"
  },
  "prompts": [
   {

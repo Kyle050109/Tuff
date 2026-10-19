@@ -14,7 +14,9 @@ if not data.exists():
     print(f"[ERROR] 数据文件不存在: {data}")
     sys.exit(1)
 
-rows = [json.loads(l) for l in data.read_text(encoding="utf-8").splitlines() if l.strip()]
+sys.path.insert(0, str(ROOT))
+from geolib import read_jsonl   # v7（C3）：统一用只按 \n 切分的安全读取，不用 splitlines()
+rows = read_jsonl(data)
 dd = {}
 for r in rows: dd[(r["prompt_id"], r["run_idx"])] = r
 valid = [r for r in dd.values() if r.get("ok")]
@@ -75,7 +77,7 @@ def sent_bind(brand, hook, use_comma=False):
         ans = r.get("answer") or ""
         found = False
         for m in re.finditer(re.escape(brand), ans):
-            starts = [x.end() for x in re.finditer(seps + "|(?:\d[.、])", ans[:m.start()])]
+            starts = [x.end() for x in re.finditer(seps + r"|(?:\d[.、])", ans[:m.start()])]
             s = max(starts) if starts else 0
             ends = [x.start() for x in re.finditer(seps, ans[m.start():])]
             e = m.start() + min(ends) if ends else len(ans)

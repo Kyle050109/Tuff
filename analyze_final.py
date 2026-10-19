@@ -10,6 +10,10 @@ GEO 基线 · 全部对外数字的唯一计算源
 > 脚本默认常量（美容仪，向后兼容）。expect 断言在题库未声明时降级为 warning（新类目首轮观察模式）。
 
 口径全部显式写在代码里，不用你猜。
+
+v7（2026-10-20）：C1 渠道表改读 meta.channels（host 后缀匹配）+ A1 含/补对照；C2 A2 区间改 Wilson；
+     新增【15】记忆点绑定率（算法 13，读 meta.memory_points）、【16】长尾空白场景（算法 15）。
+     v6 冻结于 legacy/analyze_final_v6.py，仅用于复现 T0 存档。变更登记见 RETRACTIONS.md RX-005。
 """
 import sys, re, json, math, random, itertools
 from collections import Counter, defaultdict
@@ -198,9 +202,11 @@ def main():
     if n2 and k2 == 0 and up is not None:
         print(f"  样本 {k2}/{n2} = {k2/n2*100:.2f}%   95% 上界（Clopper-Pearson）≤ {up:.2f}%")
     elif n2:
-        lo2 = (k2/n2 - 1.96*math.sqrt((k2/n2)*(1-k2/n2)/n2))*100
-        hi2 = (k2/n2 + 1.96*math.sqrt((k2/n2)*(1-k2/n2)/n2))*100
-        print(f"  样本 {k2}/{n2} = {k2/n2*100:.2f}%   Wilson 近似 95% CI [{max(lo2,0):.2f}%, {hi2:.2f}%]")
+        # v7（C2 / RX-002）：v6 此处手写 Wald 公式却标注 Wilson；改为统一 wilson()
+        lo2, hi2 = wilson(k2, n2)
+        N["p_A2"] = k2 / n2 * 100
+        N["p_A2_ci"] = [lo2, hi2]
+        print(f"  样本 {k2}/{n2} = {k2/n2*100:.2f}%   Wilson 95% CI [{lo2:.2f}%, {hi2:.2f}%]")
     else:
         print("  样本 0/0（层为空：数据尚未覆盖或部分采集）")
     print(f"  涉及提示词 {len(pids2)} 条: {pids2}")
@@ -274,39 +280,56 @@ def main():
                 N[f"geo_{tag}"] = [k_, len(sub), st_, dy_]
 
     # ---------- 4a3. 渠道 × 层级交叉（v2.0 新增：GEO 分层目标——渠道结论必须分层报告）----------
-    print(chr(10) + "【4a3】渠道 × 层级交叉（防跨层混池——六轮审核发现渠道聚合结论被层级结构掩盖）")
-    _chan_map = {"象上汇/品牌官网": [], "地方媒体": [], "携程": [], "抖音": [], "OTA(KKday/Klook)": []}
-    for r in A1 + A2:
-        for c in (r.get("citations") or []):
-            u = c.get("url") or ""
-            d = u.split("/")[2].replace("www.", "") if u.startswith("http") else "?"
-            if "douyin" in d: _chan_map["抖音"].append(r)
-            elif "ctrip" in d: _chan_map["携程"].append(r)
-            elif "kkday" in d or "klook" in d: _chan_map["OTA(KKday/Klook)"].append(r)
-            elif "xshhotels" in d or any(x in d for x in ["rongtai", "ogawa", "osim", "westinghouse", "panasonic", "songsheng"]): _chan_map["象上汇/品牌官网"].append(r)
-            elif "gdzjdaily" in d or "china.com" in d or "sohu" in d: _chan_map["地方媒体"].append(d)
-    # 用 record 集合去重（同一 record 的多个引用只算一次）
-    _chan_summary = {}
-    for cname in ["象上汇/品牌官网", "地方媒体", "携程", "OTA(KKday/Klook)", "抖音"]:
-        _doms = {"象上汇/品牌官网": ["xshhotels", "rongtai", "ogawa", "osim", "westinghouse", "panasonic", "songsheng"],
-                 "地方媒体": ["gdzjdaily", "china.com", "sohu"],
-                 "携程": ["ctrip"], "OTA(KKday/Klook)": ["kkday", "klook"], "抖音": ["douyin"]}
-        dl = _doms.get(cname, [cname])
-        _row = []
-        for lname in ["A1", "A2", "B", "C"]:
-            pool = by_layer.get(lname, [])
-            hit = [r for r in pool if any(any(d in (c.get("url") or "") for d in dl) for c in (r.get("citations") or []))]
-            m = sum(1 for r in hit if r.get("brand_mentioned"))
-            _row.append((lname, len(hit), len(pool), m))
-        _chan_summary[cname] = _row
-        parts = []
-        for ln, nh, np_, nm in _row:
-            if nh:
-                parts.append(f"{ln}:{nh}({100*nm/nh:.0f}%)")
-            else:
-                parts.append(f"{ln}:0")
-        print(f"  {cname}: {' | '.join(parts)}")
-    N["channel_by_layer"] = {c: [(ln, nh, np_, nm) for ln, nh, np_, nm in rows_] for c, rows_ in _chan_summary.items()}
+    # v7（C1）：渠道表只从题库 meta.channels 读取（算法规格书第 14 条），不再硬编码——防跨类目残留。
+    #   匹配口径：引用 URL 的 host 等于某域名或以「.域名」结尾（v6 为整条 URL 子串匹配，会把 m.ctrip.com 算进 trip.com 等）。
+    #   样本口径：同一样本多条引用命中同一渠道只计一次。
+    #   「0」= 该层无样本引用该渠道（覆盖为零）；「n(x%)」= n 个样本引用该渠道，其中 x% 提及本品牌。
+    print(chr(10) + "【4a3】渠道 × 层级交叉（渠道表来自题库 meta.channels；host 后缀匹配；样本口径）")
+    _chans = meta.get("channels") or {}
+    N["channel_by_layer"] = {}
+    N["channel_effect_A1"] = {}
+    if not _chans:
+        print("  ⚠ 题库未声明 meta.channels——本节跳过（不使用任何内置渠道表）")
+    else:
+        def _host(u):
+            try:
+                h = urlparse(u).netloc.lower()
+            except Exception:
+                return ""
+            return h[4:] if h.startswith("www.") else h
+        def _in_chan(r, doms):
+            for c in (r.get("citations") or []):
+                h = _host(c.get("url") or "")
+                if any(h == d or h.endswith("." + d) for d in doms):
+                    return True
+            return False
+        for cname, doms in _chans.items():
+            doms = [str(d).lower() for d in doms]
+            _row = []
+            for lname in ["A1", "A2", "B", "C"]:
+                pool = by_layer.get(lname, [])
+                hit = [r for r in pool if _in_chan(r, doms)]
+                m = sum(1 for r in hit if r.get("brand_mentioned"))
+                _row.append((lname, len(hit), len(pool), m))
+            N["channel_by_layer"][cname] = _row
+            parts = [f"{ln}:{nh}({100*nm/nh:.0f}%)" if nh else f"{ln}:0" for ln, nh, np_, nm in _row]
+            print(f"  {cname}: {' | '.join(parts)}")
+        # 正效应判据（规格书第 14 条）：①补集非空 ②含/补 n 均 ≥10 ③含−补差 > 0。只看 A1（曝光层）。
+        print("  ── A1 含该渠道 vs 补集（正效应判据：补集非空、两边 n≥10、差>0；共现≠因果）")
+        for cname, doms in _chans.items():
+            doms = [str(d).lower() for d in doms]
+            inc = [r for r in by_layer["A1"] if _in_chan(r, doms)]
+            exc = [r for r in by_layer["A1"] if not _in_chan(r, doms)]
+            ki = sum(1 for r in inc if r.get("brand_mentioned")); ke = sum(1 for r in exc if r.get("brand_mentioned"))
+            if not inc:
+                print(f"    {cname}: A1 无覆盖"); continue
+            if not exc:
+                print(f"    {cname}: 含 {ki}/{len(inc)}，补集为空（全覆盖，不可估计边际差）"); continue
+            pi, pe = 100*ki/len(inc), 100*ke/len(exc)
+            ok = len(inc) >= 10 and len(exc) >= 10
+            verdict = ("满足" if pi - pe > 0 else "不满足（差≤0）") if ok else "n<10，不判"
+            print(f"    {cname}: 含 {ki}/{len(inc)}={pi:.1f}% vs 补 {ke}/{len(exc)}={pe:.1f}% → 差 {pi-pe:+.1f}pp｜{verdict}")
+            N["channel_effect_A1"][cname] = [ki, len(inc), ke, len(exc)]
 
     # ---------- 4b. 意图触发率（两池并列，防混池）+ 构成占比 ----------
     print(chr(10) + "【4b】意图触发率（两池并列；表级分母声明规则）")
@@ -743,6 +766,92 @@ def main():
         print(f"  {label:<8}{t['mentions']:>6}{t['cite_samples']:>6}{t['ranked_times']:>6}{rm:>6}{rb:>4}{borda[k]:>7}")
     print("  （Borda=三项名次之和，越小越靠前；名次解析规则：答案中『数字+分隔符』列表项前 40 字含品牌名）")
     N["brand_rank"] = {k: {**v, "borda": borda[k]} for k, v in _rank_tbl.items()}
+
+    # ---------- 15. 记忆点绑定率（算法 13；v7 并入主产出，原只在 verify_spa_analysis.py） ----------
+    print(chr(10) + "【15】记忆点绑定率（算法 13：品牌名所在句含卖点词；发现层 A1+A2；双切分口径）")
+    mp = meta.get("memory_points") or {}
+    N["memory_binding"] = {}
+    if not mp.get("keywords"):
+        print("  ⚠ 题库未声明 meta.memory_points——本节跳过（卖点词须经客户确认后写入题库，不在脚本里猜）")
+    else:
+        _kw = [str(k) for k in mp["keywords"]]
+        _bl = [str(b) for b in (mp.get("brands") or [])]
+        _own_aliases = [str(b) for b in (meta.get("own_brand") or [])] or [OWN_BRAND.pattern]
+        _bmap = {"★本品牌": _own_aliases}
+        for b in _bl:
+            _bmap[b] = BRAND_ALIASES.get(b, [b])
+        _disc = by_layer["A1"] + by_layer["A2"]
+
+        def _bind(aliases, kws, comma):
+            pat = re.compile("|".join(re.escape(a) for a in aliases), re.I)
+            seps = "[。！？\n" + ("，," if comma else "") + "]"
+            ment = [r for r in _disc if pat.search(r.get("answer") or "")]
+            hit = 0
+            for r in ment:
+                ans = r.get("answer") or ""
+                for m in pat.finditer(ans):
+                    starts = [x.end() for x in re.finditer(seps + r"|(?:\d[.、])", ans[:m.start()])]
+                    s = max(starts) if starts else 0
+                    ends = [x.start() for x in re.finditer(seps, ans[m.start():])]
+                    e = m.start() + min(ends) if ends else len(ans)
+                    if any(k in ans[s:e] for k in kws):
+                        hit += 1
+                        break
+            return hit, len(ment)
+
+        print(f"  卖点词：{_kw}（来源：{mp.get('source', '未注明')}）")
+        print(f"  {'品牌':<10}{'卖点':<10}{'句末切分':>22}{'+逗号切分':>22}{'敏感性':>8}")
+        for bname, al in _bmap.items():
+            for label, kws in [("任一卖点", _kw)] + [(k, [k]) for k in _kw]:
+                b1, n = _bind(al, kws, False)
+                b2, _ = _bind(al, kws, True)
+                if n == 0:
+                    if label == "任一卖点":
+                        print(f"  {bname:<10}{label:<10}  （发现层未提及，n=0）")
+                    continue
+                l1, h1 = wilson(b1, n); l2, h2 = wilson(b2, n)
+                print(f"  {bname:<10}{label:<10}{b1:>4}/{n:<4}={100*b1/n:5.1f}% [{l1:4.1f},{h1:5.1f}]"
+                      f"{b2:>4}/{n:<4}={100*b2/n:5.1f}% [{l2:4.1f},{h2:5.1f}]  ±{abs(100*(b1-b2)/n):.1f}pp")
+                N["memory_binding"].setdefault(bname, {})[label] = {"end": [b1, n], "comma": [b2, n]}
+        print("  （分母=各品牌自己的发现层提及样本数，不同品牌分母不同；仅当 Wilson CI 不重叠才可说『独占』，"
+              "重叠时只报两组数字不断言倍数；结论对切分规则敏感，须双口径并报）")
+
+    # ---------- 16. 长尾空白场景识别（算法 15） ----------
+    print(chr(10) + "【16】长尾空白场景（算法 15：A1 未提及样本按意图分组）")
+    _a1 = by_layer["A1"]
+    _k_a1 = sum(1 for r in _a1 if r.get("brand_mentioned"))
+    _p_a1 = 100 * _k_a1 / len(_a1) if _a1 else 0.0
+    # 内容资产比 = 来源层引用样本数：最强竞品 ÷ 本品牌（发现层，§14 同口径）
+    _own_c = _rank_tbl["_本品牌"]["cite_samples"]
+    _comp_c = [(k, v["cite_samples"]) for k, v in _rank_tbl.items() if k != "_本品牌"]
+    _top = max(_comp_c, key=lambda kv: kv[1]) if _comp_c else (None, 0)
+    _ratio = (_top[1] / _own_c) if _own_c else float("inf")
+    _applies = (_ratio > 3) and (_p_a1 < 20)
+    _ratio_s = "∞（本品牌来源层为 0）" if _ratio == float("inf") else f"{_ratio:.2f}×"
+    print(f"  适用判据：内容资产比 >3× 且 A1 提及率 <20%")
+    print(f"    内容资产比 = {_top[0]} 引用样本 {_top[1]} ÷ 本品牌 {_own_c} = {_ratio_s}；A1 提及率 = {_p_a1:.2f}%"
+          f" → {'适用（超头垄断，走长尾迂回）' if _applies else '不适用（下表仅作诊断参考；已有 >30% 的层应守住）'}")
+    N["longtail_criterion"] = {"top_comp": _top[0], "top_comp_cites": _top[1], "own_cites": _own_c,
+                               "ratio": None if _ratio == float("inf") else _ratio, "p_A1": _p_a1, "applies": _applies}
+    _by_int = defaultdict(list)
+    for r in _a1:
+        _by_int[r.get("intent") or "未标注"].append(r)
+    print(f"  {'意图':<10}{'样本':>5}{'未提及':>7}{'提及率':>8}{'全零题(去重)':>12}  空白候选")
+    N["longtail"] = {}
+    for it, rs in sorted(_by_int.items(), key=lambda kv: -sum(1 for r in kv[1] if not r.get("brand_mentioned"))):
+        miss = [r for r in rs if not r.get("brand_mentioned")]
+        _texts = defaultdict(list)
+        for r in rs:
+            _texts[r["text"]].append(bool(r.get("brand_mentioned")))
+        zero = sorted(t for t, v in _texts.items() if not any(v))
+        cand = len(miss) >= 3
+        print(f"  {it:<10}{len(rs):>5}{len(miss):>7}{100*(len(rs)-len(miss))/len(rs):>7.1f}%{len(zero):>12}  {'★' if cand else ''}")
+        N["longtail"][it] = {"n": len(rs), "missed": len(miss), "zero_prompts": zero, "candidate": cand}
+    print("  ── 空白候选样题（每个意图最多 5 条，去重；全零 = 该题所有遍都未提及）")
+    for it, v in N["longtail"].items():
+        if v["candidate"] and v["zero_prompts"]:
+            print(f"    [{it}] " + " / ".join(v["zero_prompts"][:5]))
+    print("  下一步须人工评估：①头部竞品是否已覆盖该场景 ②本品牌产品是否匹配 → 选 3–5 个场景进内容生产")
 
     if out is not None:
         out.write_text(json.dumps(N, ensure_ascii=False, indent=2), encoding="utf-8")

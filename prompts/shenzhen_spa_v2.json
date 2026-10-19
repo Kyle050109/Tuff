@@ -85,7 +85,64 @@
   },
   "alias_v2_note": "2026-10-20 补繁体别名（港台来源漏命中，见 STAGE0_FINDINGS K5）。题面无繁体→分层不变；仅影响答案/引用计数。派生自 shenzhen_spa_v1.json（T0 冻结版）",
   "derived_from": "shenzhen_spa_v1.json",
-  "layer_assert_note": "2026-10-20 由 T0 观察模式实测值写入；A1 68 题原文已逐条人工核对无品牌名。注意 B15=B01/B17=B03/B19=B08/B20=B05/B21=B12 题面完全重复（见 K6）"
+  "layer_assert_note": "2026-10-20 由 T0 观察模式实测值写入；A1 68 题原文已逐条人工核对无品牌名。注意 B15=B01/B17=B03/B19=B08/B20=B05/B21=B12 题面完全重复（见 K6）",
+  "channels": {
+   "抖音": [
+    "iesdouyin.com",
+    "douyin.com"
+   ],
+   "今日头条": [
+    "toutiao.com"
+   ],
+   "携程": [
+    "ctrip.com"
+   ],
+   "Trip.com": [
+    "trip.com"
+   ],
+   "OTA(KKday/Klook)": [
+    "kkday.com",
+    "klook.com",
+    "klook.cn"
+   ],
+   "去哪儿": [
+    "qunar.com"
+   ],
+   "象上汇官网(待确认归属)": [
+    "xshhotels.com"
+   ],
+   "本地资讯": [
+    "bendibao.com",
+    "shenzhencat.org"
+   ],
+   "门户/新闻": [
+    "sina.cn",
+    "sina.com.cn",
+    "sohu.com",
+    "china.com",
+    "people.com.cn",
+    "gdzjdaily.com.cn"
+   ],
+   "政府": [
+    "gov.cn"
+   ]
+  },
+  "memory_points": {
+   "keywords": [
+    "水果",
+    "哈根达斯",
+    "自助",
+    "海鲜",
+    "过夜"
+   ],
+   "brands": [
+    "汤悦",
+    "汤崎",
+    "阿奇拉"
+   ],
+   "source": "入门指南 2026-10-10「不限量贵价水果自助+哈根达斯」+ verify_spa_analysis.py 卖点词；待客户确认"
+  },
+  "channels_note": "2026-10-20 v7：按 T0 豆包引用 Top 域名整理；host 后缀匹配。本品牌官网域名待确认（交接跟进）。"
  },
  "prompts": [
   {

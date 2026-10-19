@@ -112,7 +112,44 @@
   },
   "meta_backfill_note": "2026-10-10 按审核 B3 回填（与 analyze_final.py 内默认常量等值）；回填后跑回归确认输出零变化",
   "alias_v2_note": "2026-10-20 补繁体别名（港台来源漏命中，见 STAGE0_FINDINGS K5）。题面无繁体→分层不变；仅影响答案/引用计数。派生自 meirongyi_final_v2.json（T0 冻结版）",
-  "derived_from": "meirongyi_final_v2.json"
+  "derived_from": "meirongyi_final_v2.json",
+  "channels": {
+   "抖音": [
+    "iesdouyin.com",
+    "douyin.com"
+   ],
+   "今日头条": [
+    "toutiao.com"
+   ],
+   "竞品官网": [
+    "amiro.com.cn",
+    "ya-man.com",
+    "ya-man.co.jp",
+    "ya-man.hk",
+    "ya-man-tokyo-japan.com"
+   ],
+   "电商": [
+    "taobao.com",
+    "jd.com",
+    "tmall.com"
+   ],
+   "新闻/门户": [
+    "news.cn",
+    "gmw.cn",
+    "china.com",
+    "vogue.com.cn"
+   ],
+   "医疗/科普": [
+    "fh21.com.cn",
+    "ncbi.nlm.nih.gov",
+    "kepuchina.cn"
+   ],
+   "评测/导购": [
+    "pconline.com.cn",
+    "smzdm.com"
+   ]
+  },
+  "channels_note": "2026-10-20 v7：按 T0 豆包引用 Top 域名整理；host 后缀匹配。本品牌官网域名待确认（交接跟进）。"
  },
  "prompts": [
   {
