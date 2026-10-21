@@ -1,0 +1,331 @@
+{
+  "records_raw": 219,
+  "valid": 217,
+  "u2028_in_file": 0,
+  "n_A1": 153,
+  "prompts_A1": 72,
+  "hit_A1": 26,
+  "n_A2": 24,
+  "prompts_A2": 12,
+  "hit_A2": 0,
+  "n_B": 8,
+  "prompts_B": 4,
+  "hit_B": 8,
+  "n_C": 32,
+  "prompts_C": 16,
+  "hit_C": 32,
+  "p_A1": 16.99346405228758,
+  "p_A1_ci": [
+    11.868668726157514,
+    23.735150668696917
+  ],
+  "p_A1_prompt": 16.666666666666664,
+  "p_A1_prompt_ci": [
+    9.799275085321623,
+    26.910920902104795
+  ],
+  "p_A2_upper": 14.247359772252565,
+  "trig_A1": [
+    122,
+    26,
+    31
+  ],
+  "nontrig_upper_A1": 11.218874692237002,
+  "trig_A1+A2": [
+    146,
+    26,
+    31
+  ],
+  "nontrig_upper_A1+A2": 11.218874692237002,
+  "A1_stage1": [
+    21,
+    144
+  ],
+  "A1_stage2": [
+    5,
+    9
+  ],
+  "intent_trig_A1+A2": {
+    "榜单型": [
+      54,
+      54
+    ],
+    "人群场景": [
+      24,
+      20
+    ],
+    "需求功效": [
+      27,
+      23
+    ],
+    "品类决策": [
+      16,
+      7
+    ],
+    "信息型": [
+      20,
+      11
+    ],
+    "对比型": [
+      12,
+      7
+    ],
+    "竞品对比": [
+      24,
+      24
+    ]
+  },
+  "intent_trig_全样本": {
+    "榜单型": [
+      54,
+      54
+    ],
+    "人群场景": [
+      24,
+      20
+    ],
+    "需求功效": [
+      27,
+      23
+    ],
+    "品类决策": [
+      16,
+      7
+    ],
+    "信息型": [
+      20,
+      11
+    ],
+    "对比型": [
+      20,
+      15
+    ],
+    "竞品对比": [
+      24,
+      24
+    ],
+    "声誉型": [
+      16,
+      16
+    ],
+    "交易型": [
+      16,
+      16
+    ]
+  },
+  "intent_prompt_counts": {
+    "榜单型": 24,
+    "对比型": 10,
+    "品类决策": 8,
+    "信息型": 10,
+    "需求功效": 12,
+    "人群场景": 12,
+    "声誉型": 8,
+    "交易型": 8,
+    "竞品对比": 12
+  },
+  "citations": 2075,
+  "byte_share": 85.39759036144578,
+  "iesdouyin_share": 85.25301204819277,
+  "iesdouyin_of_byte": 99.83069977426636,
+  "unique_hosts": 113,
+  "samples_with_douyin": 144,
+  "byte_all_pool": [
+    2072,
+    2695
+  ],
+  "dom_iesdouyin.com": [
+    1769,
+    2069
+  ],
+  "ya_man_family": [
+    0,
+    0
+  ],
+  "competitor_citations": {
+    "奥佳华": {
+      "title": 269,
+      "url": 2,
+      "title_or_url": 269
+    },
+    "荣泰": {
+      "title": 273,
+      "url": 0,
+      "title_or_url": 273
+    },
+    "傲胜": {
+      "title": 39,
+      "url": 25,
+      "title_or_url": 57
+    },
+    "西屋": {
+      "title": 201,
+      "url": 0,
+      "title_or_url": 201
+    },
+    "芝华仕": {
+      "title": 9,
+      "url": 0,
+      "title_or_url": 9
+    },
+    "迪斯": {
+      "title": 30,
+      "url": 0,
+      "title_or_url": 30
+    },
+    "佳仁": {
+      "title": 38,
+      "url": 0,
+      "title_or_url": 38
+    },
+    "海尔": {
+      "title": 10,
+      "url": 0,
+      "title_or_url": 10
+    }
+  },
+  "own_brand_in_citations": 43,
+  "five_run_prompts": 3,
+  "rho": -0.07142857142857144,
+  "rho_ci": [
+    -0.2500000000000007,
+    -0.05000000000000007
+  ],
+  "de": 0.7142857142857142,
+  "de_ci": [
+    -2.886579864025407e-15,
+    0.7999999999999997
+  ],
+  "rho_estimable": false,
+  "rho_swing_only": -0.07142857142857144,
+  "five_run_total": 3,
+  "deterministic": 0,
+  "mde_single": {
+    "3pp": 1231,
+    "3pp_prompts_de1.00": 247,
+    "3pp_prompts_de1.50": 370,
+    "5pp": 443,
+    "5pp_prompts_de1.00": 89,
+    "5pp_prompts_de1.50": 133,
+    "8pp": 173,
+    "8pp_prompts_de1.00": 35,
+    "8pp_prompts_de1.50": 52,
+    "10pp": 111,
+    "10pp_prompts_de1.00": 23,
+    "10pp_prompts_de1.50": 34,
+    "15pp": 50,
+    "15pp_prompts_de1.00": 10,
+    "15pp_prompts_de1.50": 15
+  },
+  "mde_two": {
+    "5pp": 985,
+    "8pp": 406,
+    "10pp": 269
+  },
+  "hyper_A1_only": 0.001495247706589725,
+  "hyper_A1A2_merged": 0.004326009391321654,
+  "hyper_A1_榜单型": 1.0,
+  "hyper_A1_非榜单型": 0.09768004129648535,
+  "r_A1+A2": [
+    0.9709972253511052,
+    [
+      0.8434222142445811,
+      0.9949145891376366
+    ]
+  ],
+  "r_A1": [
+    0.9782349341099579,
+    [
+      0.8805674178235735,
+      0.9961951869004705
+    ]
+  ],
+  "a2_face_hits": {
+    "奥佳华": 3,
+    "OGAWA": 0,
+    "荣泰": 2,
+    "傲胜": 2,
+    "OSIM": 0,
+    "西屋": 3,
+    "芝华仕": 1,
+    "迪斯": 2,
+    "佳仁": 2,
+    "海尔": 0
+  },
+  "with_numbering": 186,
+  "numbering_gaps": 0,
+  "brand_rank": {
+    "奥佳华": {
+      "mentions": 116,
+      "cite_samples": 98,
+      "ranked_times": 19,
+      "rank_median": 1,
+      "rank_best": 1,
+      "borda": 5
+    },
+    "荣泰": {
+      "mentions": 115,
+      "cite_samples": 99,
+      "ranked_times": 22,
+      "rank_median": 1,
+      "rank_best": 1,
+      "borda": 4
+    },
+    "傲胜": {
+      "mentions": 30,
+      "cite_samples": 28,
+      "ranked_times": 4,
+      "rank_median": 2,
+      "rank_best": 1,
+      "borda": 14
+    },
+    "西屋": {
+      "mentions": 71,
+      "cite_samples": 91,
+      "ranked_times": 8,
+      "rank_median": 2,
+      "rank_best": 1,
+      "borda": 9
+    },
+    "芝华仕": {
+      "mentions": 9,
+      "cite_samples": 2,
+      "ranked_times": 0,
+      "rank_median": null,
+      "rank_best": null,
+      "borda": 24
+    },
+    "迪斯": {
+      "mentions": 4,
+      "cite_samples": 5,
+      "ranked_times": 0,
+      "rank_median": null,
+      "rank_best": null,
+      "borda": 25
+    },
+    "佳仁": {
+      "mentions": 5,
+      "cite_samples": 4,
+      "ranked_times": 0,
+      "rank_median": null,
+      "rank_best": null,
+      "borda": 23
+    },
+    "海尔": {
+      "mentions": 13,
+      "cite_samples": 10,
+      "ranked_times": 1,
+      "rank_median": 3,
+      "rank_best": 3,
+      "borda": 18
+    },
+    "_本品牌": {
+      "mentions": 26,
+      "cite_samples": 36,
+      "ranked_times": 4,
+      "rank_median": 4,
+      "rank_best": 2,
+      "borda": 13
+    }
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "records_raw": 240,
+  "valid": 226,
+  "u2028_in_file": 0,
+  "n_A1": 156,
+  "prompts_A1": 76,
+  "hit_A1": 7,
+  "n_A2": 34,
+  "prompts_A2": 14,
+  "hit_A2": 0,
+  "n_B": 8,
+  "prompts_B": 4,
+  "hit_B": 8,
+  "n_C": 28,
+  "prompts_C": 20,
+  "hit_C": 28,
+  "p_A1": 4.487179487179487,
+  "p_A1_ci": [
+    2.190305846204288,
+    8.971744583721335
+  ],
+  "p_A1_prompt": 6.578947368421052,
+  "p_A1_prompt_ci": [
+    2.8426113063375755,
+    14.493714618994577
+  ],
+  "p_A2_upper": 10.281792425901259,
+  "trig_A1": [
+    117,
+    7,
+    39
+  ],
+  "nontrig_upper_A1": 9.025110096033428,
+  "trig_A1+A2": [
+    151,
+    7,
+    39
+  ],
+  "nontrig_upper_A1+A2": 9.025110096033428,
+  "channel_by_layer": {
+    "象上汇/品牌官网": [
+      [
+        "A1",
+        4,
+        156,
+        0
+      ],
+      [
+        "A2",
+        0,
+        34,
+        0
+      ],
+      [
+        "B",
+        0,
+        8,
+        0
+      ],
+      [
+        "C",
+        0,
+        28,
+        0
+      ]
+    ],
+    "地方媒体": [
+      [
+        "A1",
+        2,
+        156,
+        0
+      ],
+      [
+        "A2",
+        2,
+        34,
+        0
+      ],
+      [
+        "B",
+        2,
+        8,
+        2
+      ],
+      [
+        "C",
+        8,
+        28,
+        8
+      ]
+    ],
+    "携程": [
+      [
+        "A1",
+        0,
+        156,
+        0
+      ],
+      [
+        "A2",
+        0,
+        34,
+        0
+      ],
+      [
+        "B",
+        0,
+        8,
+        0
+      ],
+      [
+        "C",
+        0,
+        28,
+        0
+      ]
+    ],
+    "OTA(KKday/Klook)": [
+      [
+        "A1",
+        0,
+        156,
+        0
+      ],
+      [
+        "A2",
+        0,
+        34,
+        0
+      ],
+      [
+        "B",
+        0,
+        8,
+        0
+      ],
+      [
+        "C",
+        0,
+        28,
+        0
+      ]
+    ],
+    "抖音": [
+      [
+        "A1",
+        117,
+        156,
+        7
+      ],
+      [
+        "A2",
+        34,
+        34,
+        0
+      ],
+      [
+        "B",
+        8,
+        8,
+        8
+      ],
+      [
+        "C",
+        26,
+        28,
+        26
+      ]
+    ]
+  },
+  "intent_trig_A1+A2": {
+    "信息型": [
+      26,
+      7
+    ],
+    "榜单型": [
+      62,
+      61
+    ],
+    "对比型": [
+      6,
+      4
+    ],
+    "人群场景": [
+      24,
+      23
+    ],
+    "需求功效": [
+      24,
+      23
+    ],
+    "品类决策": [
+      16,
+      1
+    ],
+    "竞品对比": [
+      32,
+      32
+    ]
+  },
+  "intent_trig_全样本": {
+    "信息型": [
+      26,
+      7
+    ],
+    "对比型": [
+      14,
+      12
+    ],
+    "榜单型": [
+      62,
+      61
+    ],
+    "声誉型": [
+      14,
+      14
+    ],
+    "交易型": [
+      14,
+      14
+    ],
+    "人群场景": [
+      24,
+      23
+    ],
+    "需求功效": [
+      24,
+      23
+    ],
+    "品类决策": [
+      16,
+      1
+    ],
+    "竞品对比": [
+      32,
+      32
+    ]
+  },
+  "intent_prompt_counts": {
+    "榜单型": 30,
+    "对比型": 10,
+    "品类决策": 8,
+    "信息型": 10,
+    "需求功效": 12,
+    "人群场景": 12,
+    "声誉型": 10,
+    "交易型": 10,
+    "竞品对比": 12
+  },
+  "citations": 2181,
+  "byte_share": 73.36084364970196,
+  "iesdouyin_share": 72.81063732232921,
+  "iesdouyin_of_byte": 99.25,
+  "unique_hosts": 199,
+  "samples_with_douyin": 151,
+  "byte_all_pool": [
+    1891,
+    2726
+  ],
+  "dom_iesdouyin.com": [
+    1588,
+    1877
+  ],
+  "dom_amiro.com.cn": [
+    38,
+    38
+  ],
+  "dom_international-shop.ya-man.com": [
+    11,
+    25
+  ],
+  "dom_ya-man.co.jp": [
+    18,
+    18
+  ],
+  "dom_ya-man-tokyo-japan.com": [
+    7,
+    12
+  ],
+  "dom_ya-man.hk": [
+    4,
+    11
+  ],
+  "dom_ya-man.com": [
+    4,
+    9
+  ],
+  "dom_m.jmoonbeauty.com": [
+    18,
+    18
+  ],
+  "ya_man_family": [
+    47,
+    78
+  ],
+  "competitor_citations": {
+    "索朗特": {
+      "title": 161,
+      "url": 0,
+      "title_or_url": 161
+    },
+    "觅光": {
+      "title": 140,
+      "url": 0,
+      "title_or_url": 140
+    },
+    "大排灯": {
+      "title": 132,
+      "url": 0,
+      "title_or_url": 132
+    },
+    "极萌": {
+      "title": 127,
+      "url": 0,
+      "title_or_url": 127
+    },
+    "雅萌": {
+      "title": 123,
+      "url": 47,
+      "title_or_url": 149
+    },
+    "AMIRO": {
+      "title": 96,
+      "url": 48,
+      "title_or_url": 99
+    },
+    "宙斯": {
+      "title": 94,
+      "url": 0,
+      "title_or_url": 94
+    },
+    "纽立": {
+      "title": 87,
+      "url": 0,
+      "title_or_url": 87
+    }
+  },
+  "own_brand_in_citations": 0,
+  "five_run_prompts": 25,
+  "rho": 0.12464985994397937,
+  "rho_ci": [
+    -0.024590163934427124,
+    0.23780487804877887
+  ],
+  "de": 1.4985994397759175,
+  "de_ci": [
+    0.9016393442622915,
+    1.9512195121951155
+  ],
+  "rho_estimable": true,
+  "rho_subset_rates": [
+    4.8,
+    1.5384615384615385
+  ],
+  "rho_swing_only": -0.19047619047619035,
+  "five_run_total": 25,
+  "deterministic": 21,
+  "account_prompts": 7,
+  "acct_within": 0.6045845688702831,
+  "acct_cross": 0.6013354076846138,
+  "acct_diff": -0.0032491611856692065,
+  "acct_ci": [
+    -0.07922590807503757,
+    0.07272758570369917
+  ],
+  "mde_single": {
+    "3pp": 374,
+    "3pp_prompts_de1.50": 113,
+    "5pp": 135,
+    "5pp_prompts_de1.50": 41,
+    "8pp": 53,
+    "8pp_prompts_de1.50": 16,
+    "10pp": 34,
+    "10pp_prompts_de1.50": 11,
+    "15pp": 15,
+    "15pp_prompts_de1.50": 5
+  },
+  "mde_two": {
+    "5pp": 407,
+    "8pp": 190,
+    "10pp": 134
+  },
+  "hyper_A1_only": 0.12743412612369723,
+  "hyper_A1A2_merged": 0.19446302014745878,
+  "hyper_A1_榜单型": 0.9032258064516128,
+  "hyper_A1_非榜单型": 0.5957446808510638,
+  "r_A1+A2": [
+    -0.022466004450846976,
+    [
+      -0.6765022825253604,
+      0.6513827780105101
+    ]
+  ],
+  "r_A1": [
+    -0.17998197308838704,
+    [
+      -0.7539867915087854,
+      0.5498753288813312
+    ]
+  ],
+  "a2_face_hits": {
+    "索朗特": 0,
+    "觅光": 4,
+    "大排灯": 2,
+    "极萌": 3,
+    "雅萌": 4,
+    "YA-MAN": 0,
+    "YAMAN": 0,
+    "AMIRO": 1,
+    "宙斯": 2,
+    "纽立": 1,
+    "初普": 3,
+    "Tripollar": 0
+  },
+  "with_numbering": 126,
+  "numbering_gaps": 0,
+  "acct_paired_12": [
+    0.006371252204585517,
+    [
+      -0.10344569447938505,
+      0.1161881988885561
+    ]
+  ],
+  "brand_rank": {
+    "索朗特": {
+      "mentions": 3,
+      "cite_samples": 71,
+      "ranked_times": 0,
+      "rank_median": null,
+      "rank_best": null,
+      "borda": 22
+    },
+    "觅光": {
+      "mentions": 96,
+      "cite_samples": 47,
+      "ranked_times": 18,
+      "rank_median": 3,
+      "rank_best": 1,
+      "borda": 11
+    },
+    "大排灯": {
+      "mentions": 62,
+      "cite_samples": 71,
+      "ranked_times": 10,
+      "rank_median": 1,
+      "rank_best": 1,
+      "borda": 15
+    },
+    "极萌": {
+      "mentions": 95,
+      "cite_samples": 68,
+      "ranked_times": 21,
+      "rank_median": 2,
+      "rank_best": 1,
+      "borda": 9
+    },
+    "雅萌": {
+      "mentions": 115,
+      "cite_samples": 73,
+      "ranked_times": 22,
+      "rank_median": 2,
+      "rank_best": 1,
+      "borda": 3
+    },
+    "AMIRO": {
+      "mentions": 63,
+      "cite_samples": 29,
+      "ranked_times": 11,
+      "rank_median": 3,
+      "rank_best": 2,
+      "borda": 19
+    },
+    "宙斯": {
+      "mentions": 67,
+      "cite_samples": 31,
+      "ranked_times": 3,
+      "rank_median": 3,
+      "rank_best": 2,
+      "borda": 19
+    },
+    "纽立": {
+      "mentions": 4,
+      "cite_samples": 50,
+      "ranked_times": 0,
+      "rank_median": null,
+      "rank_best": null,
+      "borda": 24
+    },
+    "初普": {
+      "mentions": 80,
+      "cite_samples": 25,
+      "ranked_times": 16,
+      "rank_median": 3,
+      "rank_best": 1,
+      "borda": 17
+    },
+    "_本品牌": {
+      "mentions": 7,
+      "cite_samples": 0,
+      "ranked_times": 2,
+      "rank_median": 2,
+      "rank_best": 2,
+      "borda": 26
+    }
+  }
+}

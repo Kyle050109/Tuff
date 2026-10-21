@@ -92,3 +92,18 @@
 
 - 渠道正效应（A1 含 vs 补，共现不是因果）：松胜只有「抖音」+21.7pp 满足判据（补集 0/33）。水裹「携程」+18.0pp、「OTA」+5.5pp 满足，抖音为全覆盖、不可估计。斐驰「抖音」+6.0pp。
 - 长尾判据：只有斐驰适用（内容资产比 ∞，本品牌来源层为 0；A1 4.49%）。松胜 2.75×、A1 16.99%，不适用但接近。水裹不适用（A1 65%）。
+
+
+---
+
+# 10-21 第二批数据核查
+
+| 文件 | 结论 |
+|---|---|
+| manifest.md5 | 全部校验通过 |
+| 豆包/compare_accounts.jsonl（75 行） | ✅ 补齐唯一缺口。T0 三个类目现已严格逐行复现；置换检验 p=0.9195、t(6) CI [-0.0792, +0.0727]、两档功效自检原样复现 |
+| 豆包/accounts.json | 3 个 Chrome profile + 调试端口，不含登录凭据。确认三账号在同一台机器上 |
+| DeepSeek/ds_chair_baseline、ds_spa_baseline | 与已有的 按摩椅 / 水裹_search_results **md5 完全相同**，只是改了名，没有新数据 |
+| DeepSeek/ds_cross_analysis.json | 无生成脚本。松胜竞品 445（报告 438，复算 440），三者不一致；水裹 200 可复现。含 7 类内容类型计数，但没有分类代码，K7 仍未解决。**宫和相关数字不在其中**，RX-001 仍待确认 |
+| 分析存档/final_meirongyi…numbers.json、final_anmo_chair…numbers.json | 与复算逐项比对，**数值零差异**（按摩椅那份由更早的 v5 生成，少了渠道一节） |
+| README 声明的 samples_anonymous.jsonl、perm_v16_output.txt | **压缩包里没有**，已列入跟进 A7 |

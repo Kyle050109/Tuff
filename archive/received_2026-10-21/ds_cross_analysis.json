@@ -1,0 +1,104 @@
+{
+  "songsheng": {
+    "total_citations": 1040,
+    "unique_urls": 671,
+    "brand_cited": 222,
+    "comp_cited": 445,
+    "neutral": 373,
+    "domains_top10": {
+      "zhuanlan.zhihu.com": 189,
+      "zhihu.com": 120,
+      "pingwest.com": 84,
+      "pconline.com.cn": 46,
+      "diy.zol.com.cn": 41,
+      "post.smzdm.com": 38,
+      "tech.cheaa.com": 36,
+      "news.zol.com.cn": 25,
+      "jianghu.taobao.com": 25,
+      "world.taobao.com": 20
+    },
+    "types": {
+      "知识/科普": 372,
+      "排行/推荐": 187,
+      "测评/对比": 170,
+      "攻略/指南": 163,
+      "探店/体验": 94,
+      "新闻/通稿": 27,
+      "评价/讨论": 27
+    },
+    "brand_types": {
+      "知识/科普": 51,
+      "攻略/指南": 42,
+      "探店/体验": 39,
+      "排行/推荐": 32,
+      "测评/对比": 32,
+      "新闻/通稿": 19,
+      "评价/讨论": 7
+    },
+    "comp_types": {
+      "知识/科普": 131,
+      "排行/推荐": 129,
+      "测评/对比": 101,
+      "攻略/指南": 46,
+      "探店/体验": 26,
+      "评价/讨论": 7,
+      "新闻/通稿": 5
+    },
+    "rerank_dist": {
+      "≥1.5": 511,
+      "1.0-1.5": 397,
+      "<1.0": 132
+    }
+  },
+  "shuiguo": {
+    "total_citations": 991,
+    "unique_urls": 374,
+    "brand_cited": 261,
+    "comp_cited": 200,
+    "neutral": 530,
+    "domains_top10": {
+      "tw.trip.com": 191,
+      "zhuanlan.zhihu.com": 146,
+      "ulifestyle.com.hk": 93,
+      "chinatimes.com": 48,
+      "klook.cn": 40,
+      "zhihu.com": 33,
+      "hopegoo.com": 31,
+      "m.weibo.cn": 18,
+      "agoda.cn": 16,
+      "utravel.com.hk": 16
+    },
+    "types": {
+      "知识/科普": 534,
+      "攻略/指南": 166,
+      "探店/体验": 124,
+      "测评/对比": 63,
+      "排行/推荐": 45,
+      "评价/讨论": 30,
+      "新闻/通稿": 29
+    },
+    "brand_types": {
+      "知识/科普": 91,
+      "测评/对比": 48,
+      "攻略/指南": 45,
+      "探店/体验": 43,
+      "新闻/通稿": 21,
+      "排行/推荐": 12,
+      "评价/讨论": 1
+    },
+    "comp_types": {
+      "知识/科普": 103,
+      "攻略/指南": 32,
+      "探店/体验": 29,
+      "测评/对比": 11,
+      "排行/推荐": 11,
+      "新闻/通稿": 8,
+      "评价/讨论": 6
+    },
+    "rerank_dist": {
+      "≥1.5": 450,
+      "<1.0": 246,
+      "1.0-1.5": 295
+    }
+  }
+}

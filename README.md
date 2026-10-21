@@ -18,7 +18,7 @@
 | `data/` | 豆包采集原始数据；`data/deepseek/` 为 Search API 原始数据 |
 | `archive/T0_2026-10-10/` | **T0 冻结基线**：分析输出存档 + 采集日志（只读） |
 | `MANIFEST_T0.md5` | T0 数据与题库 md5 |
-| `regress.sh` | 一条命令复算全部数字（T0 口径 + alias v2 口径，共 12 项）并与存档比对 |
+| `regress.sh` | 一条命令复算全部数字（T0 口径 + alias v2 口径，共 18 项，含置换检验）并与存档比对 |
 | `alias_scan.py` | 别名漏命中扫描（繁体），新增品牌时必跑 |
 | `OBJECT_SPEC.md` | 测量对象说明（一页纸） |
 | `RETRACTIONS.md` | 撤回与更正记录 |
@@ -46,4 +46,5 @@ bash regress.sh            # 期望：6 项 ✓ + md5 ✓
 ## 版本
 
 - `analyze_final.py` 以 03/06 包版本（v6，md5 a9dc2d2d…）为准；04 包旧版（v5，33898b1d…）已被其完全覆盖，不再使用。
-- 已知缺口：`data/compare_accounts.jsonl`（美容仪账号对照，75 条）不在任何数据包中，原件在 Windows `C:\Users\29496\geo-lab\data\`。补入后 `regress.sh` 会自动切换为严格逐行比对。
+- `data/compare_accounts.jsonl`、`data/accounts.json`：2026-10-21 第二批数据补入，regress 已是严格逐行比对。
+- `archive/received_2026-10-21/`：第二批数据中交接人提供的分析结果原件（ds_cross_analysis.json 等），只读留档。

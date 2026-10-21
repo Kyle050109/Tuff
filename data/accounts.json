@@ -1,0 +1,5 @@
+[
+  {"name": "acc1", "profile": "chrome-profile",   "port": 9222},
+  {"name": "acc2", "profile": "chrome-profile-2", "port": 9223},
+  {"name": "acc3", "profile": "chrome-profile-3", "port": 9224}
+]

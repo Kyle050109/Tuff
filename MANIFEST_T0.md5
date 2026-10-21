@@ -7,3 +7,5 @@ eb0884d88a4b6ba0596eab766f231ba9  data/deepseek/ds_spa_baseline.jsonl
 cf2e88fef0c154ce36a7d1022d07e2e1  prompts/anmo_chair_v1.json
 6e83570c939c73ef371ecaa771ebe88d  prompts/meirongyi_final_v2.json
 6c3132b15265312230f579f0275a54e2  prompts/shenzhen_spa_v1.json
+5842b3929b2ae330ac250570ec518189  data/compare_accounts.jsonl
+6b99f5f93c295f43e69b7fda99668090  data/accounts.json

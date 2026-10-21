@@ -52,6 +52,9 @@ run v7_beauty "$V7/beauty.txt" $PY analyze_final.py --prompts prompts/meirongyi_
 run v7_chair  "$V7/chair.txt"  $PY analyze_final.py --prompts prompts/anmo_chair_v2.json --data data/chair_samples.jsonl --json-out out/v7_chair.json
 run v7_spa    "$V7/spa.txt"    $PY analyze_final.py --prompts prompts/shenzhen_spa_v2.json --data data/spa_samples.jsonl --json-out out/v7_spa.json
 
+echo "── 置换检验（账号不变性，p=0.9195）"
+run perm "$T0/perm_output.txt" $PY permutation_test.py
+
 echo "── 数据完整性（md5）"
 md5sum -c --quiet MANIFEST_T0.md5 && echo "✓ T0 数据/题库 md5 全部一致" || fail=1
 md5sum -c --quiet MANIFEST_ALIAS_V2.md5 && echo "✓ 当前题库 md5 一致" || fail=1
