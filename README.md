@@ -40,7 +40,7 @@
 ## 复算
 
 ```bash
-bash regress.sh            # 期望：6 项 ✓ + md5 ✓
+bash regress.sh            # 期望：18 项 ✓ + 2 项 md5 ✓（全部严格逐行一致）
 ```
 
 ## 版本
